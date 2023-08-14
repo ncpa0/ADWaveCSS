@@ -1,0 +1,13 @@
+{
+  "name": "gtk-css-web",
+  "packageManager": "yarn@3.2.4",
+  "scripts": {
+    "build": "sass src/main.scss dist/styles.css --no-source-map",
+    "watch": "sass src/main.scss dist/styles.css --no-source-map --watch",
+    "format": "prettier --write ./src/**/*.scss"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "sass": "^1.65.1"
+  }
+}

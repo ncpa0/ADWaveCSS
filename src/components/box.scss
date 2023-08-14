@@ -1,0 +1,8 @@
+.box {
+  display: flex;
+  background-color: color("bg");
+
+  &.dark {
+    background-color: color("bg2");
+  }
+}

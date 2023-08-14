@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+@import "variables";
+@import "components/button";
+@import "components/box";
+@import "components/linked";
+@import "components/input";
+@import "components/checkbox";
+@import "components/message";
+@import "components/frame";
+@import "components/switch";
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}

@@ -1,0 +1,70 @@
+.btn {
+  background-color: color("btn");
+  border-radius: size("bradius");
+  border: unset;
+  outline: unset;
+  outline-offset: -4px;
+  padding: 0.5em 0.5em;
+  transition:
+    background-color 0.2s,
+    border 0.2s;
+
+  &.primary {
+    background-color: color("primary");
+
+    &:hover {
+      background-color: color("primary-hover");
+    }
+
+    &:active {
+      background-color: color("primary-pressed");
+    }
+  }
+
+  &.danger {
+    background-color: color("danger");
+
+    &:hover {
+      background-color: color("danger-hover");
+    }
+
+    &:active {
+      background-color: color("danger-pressed");
+    }
+  }
+
+  &.flat {
+    background-color: transparent;
+
+    &:hover {
+      background-color: color("btn");
+    }
+
+    &:active {
+      background-color: color("btn-pressed");
+    }
+  }
+
+  &.circular {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 18px;
+    padding: unset;
+  }
+
+  &.pill {
+    border-radius: 18px;
+  }
+
+  &:hover {
+    background-color: color("btn-hover");
+  }
+
+  &:active {
+    background-color: color("btn-pressed");
+  }
+
+  &:focus {
+    outline: 2px dotted color("highlight");
+  }
+}

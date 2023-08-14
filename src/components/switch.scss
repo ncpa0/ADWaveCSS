@@ -1,0 +1,30 @@
+$swBtnDim: 1.7em;
+$swBtnMargin: 0.15em;
+
+.switch {
+  border-radius: 18px;
+  background-color: color("bg4");
+  height: $swBtnDim;
+  width: $swBtnDim * 2;
+  transition: background-color 0.2s;
+
+  .switch-knob {
+    border-radius: 18px;
+    margin: $swBtnMargin;
+    height: calc($swBtnDim - (2 * $swBtnMargin));
+    width: calc($swBtnDim - (2 * $swBtnMargin));
+    background-color: color("fg");
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: left 0.2s;
+  }
+
+  &.active {
+    background-color: color("primary");
+
+    .switch-knob {
+      left: $swBtnDim;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@use "sass:map";
+
+$colorNames: (
+  bg: --clr-bg,
+  bg2: --clr-bg-second,
+  bg3: --clr-bg-third,
+  bg4: --clr-bg-fourth,
+  fg: --clr-fg,
+  text: --clr-text,
+  text-primary: --clr-text-primary,
+  text-success: --clr-text-success,
+  text-alert: --clr-text-alert,
+  text-error: --clr-text-error,
+  highlight: --clr-highlight,
+  dimmed: --clr-dimmed-text,
+  btn: --clr-btn,
+  btn-hover: --clr-btn-hover,
+  btn-pressed: --clr-btn-pressed,
+  border: --clr-border,
+  primary: --clr-primary,
+  primary-hover: --clr-primary-hover,
+  primary-pressed: --clr-primary-pressed,
+  primary-border: --clr-primary-border,
+  danger: --clr-danger,
+  danger-hover: --clr-danger-hover,
+  danger-pressed: --clr-danger-pressed,
+  danger-border: --clr-danger-border,
+);
+
+@function colorName($name) {
+  @return map.get($colorNames, $name);
+}
+
+@function color($name) {
+  @return var(#{colorName($name)});
+}
+
+$sizes: (
+  bradius: --border-radius,
+);
+
+@function sizeName($name) {
+  @return map.get($sizes, $name);
+}
+
+@function size($name) {
+  @return var(#{sizeName($name)});
+}
+
+:root {
+  #{sizeName("bradius")}: 5px;
+}
+
+.dark-theme {
+  $bgColor: #363636;
+  $bgSecondColor: #121212;
+  $bgThirdColor: #242424;
+  $bgFourthColor: #545454;
+  $fgColor: #d2d2d2;
+  $dimmedColor: lighten($bgColor, 2%);
+  $highlightColor: lighten($bgColor, 20%);
+  $btnColor: #292929;
+
+  $textColor: #eeeeec;
+  $textPrimaryColor: #78aeed;
+  $textSuccessColor: #8ff0a4;
+  $textAlertColor: #f8e45c;
+  $textErrorPrimaryColor: #ff7b63;
+
+  $primaryColor: #15529d;
+  $dangerColor: #b0161d;
+
+  #{colorName("bg")}: $bgColor;
+  #{colorName("bg2")}: $bgSecondColor;
+  #{colorName("bg3")}: $bgThirdColor;
+  #{colorName("bg4")}: $bgFourthColor;
+  #{colorName("fg")}: $fgColor;
+  #{colorName("text")}: $textColor;
+  #{colorName("text-primary")}: $textPrimaryColor;
+  #{colorName("text-success")}: $textSuccessColor;
+  #{colorName("text-alert")}: $textAlertColor;
+  #{colorName("text-error")}: $textErrorPrimaryColor;
+  #{colorName("highlight")}: $highlightColor;
+  #{colorName("dimmed")}: $dimmedColor;
+  #{colorName("btn")}: $btnColor;
+  #{colorName("btn-hover")}: lighten($btnColor, 6%);
+  #{colorName("btn-pressed")}: darken($btnColor, 8.25%);
+  #{colorName("btn-border")}: darken($btnColor, 9%);
+  #{colorName("primary")}: $primaryColor;
+  #{colorName("primary-hover")}: lighten($primaryColor, 6%);
+  #{colorName("primary-pressed")}: darken($primaryColor, 8.25%);
+  #{colorName("primary-border")}: darken($primaryColor, 9%);
+  #{colorName("danger")}: $dangerColor;
+  #{colorName("danger-hover")}: lighten($dangerColor, 6%);
+  #{colorName("danger-pressed")}: darken($dangerColor, 8.25%);
+  #{colorName("danger-border")}: darken($dangerColor, 9%);
+
+  & * {
+    color: color("text");
+  }
+}
+
+.light-theme {
+  #{colorName("bg")}: #353535;
+  #{colorName("text")}: #eeeeec;
+  #{colorName("btn")}: #333333;
+  #{colorName("btn-hover")}: #373737;
+  #{colorName("btn-pressed")}: #1e1e1e;
+  #{colorName("btn-border")}: #1c1c1c;
+
+  & * {
+    color: color("text");
+  }
+}

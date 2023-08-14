@@ -1,0 +1,15 @@
+.message {
+  color: color("text-primary");
+
+  &.success {
+    color: color("text-success");
+  }
+
+  &.alert {
+    color: color("text-alert");
+  }
+
+  &.error {
+    color: color("text-error");
+  }
+}
