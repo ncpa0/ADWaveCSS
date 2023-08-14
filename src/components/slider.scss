@@ -1,0 +1,21 @@
+.slider-track {
+  height: 0.2em;
+  border-radius: 18px;
+  background-color: color("btn");
+  border: 1px solid color("btn-border");
+}
+
+.slider-progress {
+  height: 0.2em;
+  border-radius: 18px;
+  background-color: color("primary");
+  border: 1px solid color("btn-border");
+}
+
+.slider-thumb {
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 18px;
+  background-color: color("btn");
+  border: 0.8px solid color("btn-border");
+}

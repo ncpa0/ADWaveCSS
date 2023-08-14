@@ -47,3 +47,11 @@ Circualr buttons are always circles of a fixed width and height. Those can be sc
 ```html
 <button class="btn circular">Click Me</button>
 ```
+
+## Toggled Button
+
+When a button is togglable (similarly to a checkbox), `toggled` class can be used to highlight that button.
+
+```html
+<button class="btn toggled">Click Me</button>
+```

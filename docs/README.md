@@ -7,4 +7,5 @@
 5. [input](./components/input.md)
 6. [linked](./components/linked.md)
 7. [message](./components/message.md)
-8. [switch](./components/switch.md)
+8. [slider](./components/slider.md)
+9. [switch](./components/switch.md)
