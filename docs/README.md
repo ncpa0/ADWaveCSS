@@ -3,18 +3,19 @@
 ## Components
 
 1. [box](./components/box.md)
-2. [button](./components/button.md)
-3. [checkbox](./components/checkbox.md)
-4. [frame](./components/frame.md)
-5. [input](./components/input.md)
-6. [linked](./components/linked.md)
-7. [message](./components/message.md)
-8. [slider](./components/slider.md)
-9. [switch](./components/switch.md)
-10. [card](./components/card.md)
-11. [list](./components/list.md)
-12. [separator](./components/separator.md)
-13. [nav-sidebar](./components/nav-sidebar.md)
+2. [card](./components/card.md)
+3. [list](./components/list.md)
+4. [separator](./components/separator.md)
+5. [nav-sidebar](./components/nav-sidebar.md)
+6. [typography](./components/typography.md)
+7. [button](./components/button.md)
+8. [checkbox](./components/checkbox.md)
+9. [frame](./components/frame.md)
+10. [input](./components/input.md)
+11. [linked](./components/linked.md)
+12. [message](./components/message.md)
+13. [slider](./components/slider.md)
+14. [switch](./components/switch.md)
 
 ## Themes
 

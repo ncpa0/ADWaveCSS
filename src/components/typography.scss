@@ -1,0 +1,24 @@
+.text {
+  font-size: 1em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.label {
+  font-size: 1.1em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 0.9em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: color("text-secondary");
+}
+
+.header {
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
