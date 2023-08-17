@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
 @import "variables";
-@import "components/button";
 @import "components/box";
-@import "components/linked";
-@import "components/input";
+@import "components/button";
+@import "components/card";
 @import "components/checkbox";
-@import "components/message";
 @import "components/frame";
-@import "components/switch";
+@import "components/input";
+@import "components/linked";
+@import "components/list";
+@import "components/message";
+@import "components/nav-sidebar";
+@import "components/separator";
 @import "components/slider";
+@import "components/switch";
 
 * {
   font-family: "Ubuntu", sans-serif;

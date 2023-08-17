@@ -5,5 +5,7 @@
 Frame class adds a simple non-rounded border around the element.
 
 ```html
-<div class="frame"></div>
+<div class="frame">
+  <!-- content -->
+</div>
 ```

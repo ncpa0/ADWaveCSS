@@ -1,0 +1,11 @@
+.card {
+  border-radius: size("cradius");
+  background-color: color("bg2");
+  padding: 0.85em 1.15em;
+
+  &.activable {
+    &:hover {
+      background-color: color("dimmed");
+    }
+  }
+}

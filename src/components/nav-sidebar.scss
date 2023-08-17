@@ -1,0 +1,25 @@
+.nav-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: color("bg1");
+  padding: 0.25em;
+
+  .nav-sidebar-btn {
+    display: flex;
+    font-size: inherit;
+    border: unset;
+    margin: 1px 0px;
+    border-radius: size("bradius");
+    padding: 0.7em;
+    background-color: transparent;
+    transition: background-color 0.1s;
+
+    &:hover {
+      background-color: color("bg3");
+    }
+
+    &.active {
+      background-color: color("bg2");
+    }
+  }
+}

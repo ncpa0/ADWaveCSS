@@ -1,8 +1,8 @@
 .box {
   display: flex;
-  background-color: color("bg");
+  background-color: color("bg1");
 
-  &.dark {
+  &.light {
     background-color: color("bg2");
   }
 }

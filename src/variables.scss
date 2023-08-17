@@ -1,18 +1,19 @@
 @use "sass:map";
 
 $colorNames: (
-  bg: --clr-bg,
+  bg1: --clr-bg,
   bg2: --clr-bg-second,
   bg3: --clr-bg-third,
   bg4: --clr-bg-fourth,
   fg: --clr-fg,
   text: --clr-text,
+  text-secondary: --clr-text-secondary,
   text-primary: --clr-text-primary,
   text-success: --clr-text-success,
   text-alert: --clr-text-alert,
   text-error: --clr-text-error,
   highlight: --clr-highlight,
-  dimmed: --clr-dimmed-text,
+  dimmed: --clr-dimmed,
   btn: --clr-btn,
   btn-highlighted: --clr-btn-highlighted,
   btn-hover: --clr-btn-hover,
@@ -20,6 +21,7 @@ $colorNames: (
   btn-border: --clr-btn-border,
   border: --clr-border,
   primary: --clr-primary,
+  primary-darker: --clr-primary-darker,
   primary-highlighted: --clr-primary-highlighted,
   primary-hover: --clr-primary-hover,
   primary-pressed: --clr-primary-pressed,
@@ -41,6 +43,7 @@ $colorNames: (
 
 $sizes: (
   bradius: --border-radius,
+  cradius: --card-radius,
 );
 
 @function sizeName($name) {
@@ -53,33 +56,36 @@ $sizes: (
 
 :root {
   #{sizeName("bradius")}: 5px;
+  #{sizeName("cradius")}: 8px;
 }
 
 .dark-theme {
-  $bgColor: #363636;
-  $bgSecondColor: #121212;
+  $bgColor: #121212;
+  $bgSecondColor: #363636;
   $bgThirdColor: #242424;
   $bgFourthColor: #545454;
   $fgColor: #d2d2d2;
-  $dimmedColor: lighten($bgColor, 2%);
-  $highlightColor: lighten($bgColor, 20%);
+  $dimmedColor: lighten($bgSecondColor, 2%);
+  $highlightColor: lighten($bgSecondColor, 20%);
   $btnColor: #292929;
 
   $textColor: #eeeeec;
+  $textSecondaryColor: #a0a0a0;
   $textPrimaryColor: #78aeed;
   $textSuccessColor: #8ff0a4;
   $textAlertColor: #f8e45c;
   $textErrorPrimaryColor: #ff7b63;
 
-  $primaryColor: #15529d;
+  $primaryColor: #3584e4;
   $dangerColor: #b0161d;
 
-  #{colorName("bg")}: $bgColor;
+  #{colorName("bg1")}: $bgColor;
   #{colorName("bg2")}: $bgSecondColor;
   #{colorName("bg3")}: $bgThirdColor;
   #{colorName("bg4")}: $bgFourthColor;
   #{colorName("fg")}: $fgColor;
   #{colorName("text")}: $textColor;
+  #{colorName("text-secondary")}: $textSecondaryColor;
   #{colorName("text-primary")}: $textPrimaryColor;
   #{colorName("text-success")}: $textSuccessColor;
   #{colorName("text-alert")}: $textAlertColor;
@@ -92,6 +98,7 @@ $sizes: (
   #{colorName("btn-pressed")}: darken($btnColor, 8.25%);
   #{colorName("btn-border")}: darken($btnColor, 9%);
   #{colorName("primary")}: $primaryColor;
+  #{colorName("primary-darker")}: darken($primaryColor, 12%);
   #{colorName("primary-highlighted")}: lighten($primaryColor, 3%);
   #{colorName("primary-hover")}: lighten($primaryColor, 6%);
   #{colorName("primary-pressed")}: darken($primaryColor, 8.25%);
