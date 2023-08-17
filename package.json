@@ -1,13 +1,26 @@
 {
   "name": "gtk-css-web",
   "packageManager": "yarn@3.2.4",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./css": "./dist/styles.css"
+  },
   "scripts": {
-    "build": "sass src/main.scss dist/styles.css --no-source-map",
-    "watch": "sass src/main.scss dist/styles.css --no-source-map --watch",
-    "format": "prettier --write ./src/**/*.scss"
+    "build:js": "tsc",
+    "watch:js": "tsc --watch",
+    "build:css": "sass src/main.scss dist/styles.css --no-source-map",
+    "watch:css": "sass src/main.scss dist/styles.css --no-source-map --watch",
+    "build": "yarn build:js && yarn build:css",
+    "watch": "yarn watch:js & yarn watch:css",
+    "format": "prettier --write ./src/**/*.{scss, ts}"
   },
   "devDependencies": {
-    "prettier": "^3.0.1",
-    "sass": "^1.65.1"
+    "prettier": "latest",
+    "sass": "latest",
+    "typescript": "latest"
   }
 }
