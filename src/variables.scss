@@ -115,12 +115,54 @@ $sizes: (
 }
 
 .light-theme {
-  #{colorName("bg")}: #353535;
-  #{colorName("text")}: #eeeeec;
-  #{colorName("btn")}: #333333;
-  #{colorName("btn-hover")}: #373737;
-  #{colorName("btn-pressed")}: #1e1e1e;
-  #{colorName("btn-border")}: #1c1c1c;
+  $bgColor: #121212;
+  $bgSecondColor: #363636;
+  $bgThirdColor: #242424;
+  $bgFourthColor: #545454;
+  $fgColor: #d2d2d2;
+  $dimmedColor: lighten($bgSecondColor, 2%);
+  $highlightColor: lighten($bgSecondColor, 20%);
+  $btnColor: #292929;
+
+  $textColor: #eeeeec;
+  $textSecondaryColor: #a0a0a0;
+  $textPrimaryColor: #78aeed;
+  $textSuccessColor: #8ff0a4;
+  $textAlertColor: #f8e45c;
+  $textErrorPrimaryColor: #ff7b63;
+
+  $primaryColor: #3584e4;
+  $dangerColor: #b0161d;
+
+  #{colorName("bg1")}: $bgColor;
+  #{colorName("bg2")}: $bgSecondColor;
+  #{colorName("bg3")}: $bgThirdColor;
+  #{colorName("bg4")}: $bgFourthColor;
+  #{colorName("fg")}: $fgColor;
+  #{colorName("text")}: $textColor;
+  #{colorName("text-secondary")}: $textSecondaryColor;
+  #{colorName("text-primary")}: $textPrimaryColor;
+  #{colorName("text-success")}: $textSuccessColor;
+  #{colorName("text-alert")}: $textAlertColor;
+  #{colorName("text-error")}: $textErrorPrimaryColor;
+  #{colorName("highlight")}: $highlightColor;
+  #{colorName("dimmed")}: $dimmedColor;
+  #{colorName("btn")}: $btnColor;
+  #{colorName("btn-highlighted")}: lighten($btnColor, 3%);
+  #{colorName("btn-hover")}: lighten($btnColor, 6%);
+  #{colorName("btn-pressed")}: darken($btnColor, 8.25%);
+  #{colorName("btn-border")}: darken($btnColor, 9%);
+  #{colorName("primary")}: $primaryColor;
+  #{colorName("primary-darker")}: darken($primaryColor, 12%);
+  #{colorName("primary-highlighted")}: lighten($primaryColor, 3%);
+  #{colorName("primary-hover")}: lighten($primaryColor, 6%);
+  #{colorName("primary-pressed")}: darken($primaryColor, 8.25%);
+  #{colorName("primary-border")}: darken($primaryColor, 9%);
+  #{colorName("danger")}: $dangerColor;
+  #{colorName("danger-highlighted")}: lighten($dangerColor, 3%);
+  #{colorName("danger-hover")}: lighten($dangerColor, 6%);
+  #{colorName("danger-pressed")}: darken($dangerColor, 8.25%);
+  #{colorName("danger-border")}: darken($dangerColor, 9%);
 
   & * {
     color: color("text");
