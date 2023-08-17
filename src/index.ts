@@ -1,6 +1,11 @@
+export class Theme {
+  static readonly dark = "dark-theme";
+  static readonly light = "light-theme";
+}
+
 export class Box {
   static readonly box = "box";
-  static readonly dark = "dark";
+  static readonly light = "light";
 }
 
 export class Button {
@@ -69,6 +74,7 @@ export class Typography {
   static readonly header = "header";
 }
 
+Object.freeze(Theme);
 Object.freeze(Box);
 Object.freeze(Button);
 Object.freeze(Card);
@@ -83,6 +89,7 @@ Object.freeze(Switch);
 Object.freeze(Typography);
 
 export default {
+  Theme,
   Box,
   Button,
   Card,

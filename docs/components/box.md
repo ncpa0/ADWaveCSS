@@ -10,12 +10,12 @@ Box is a simple container element. By default comes with a flex display type.
 </div>
 ```
 
-## Darker box
+## Brighter box
 
-Box elements when the `dark` class name is assigned to them change their background color to a darker one.
+Box elements when the `light` class name is assigned to them change their background color to a brighter one.
 
 ```html
-<div class="box dark">
+<div class="box light">
   <!-- content -->
 </div>
 ```
