@@ -1,6 +1,6 @@
 {
   "name": "gtk-css-web",
-  "packageManager": "yarn@3.2.4",
+  "packageManager": "yarn@3.6.2",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
