@@ -1,4 +1,5 @@
 .box {
+  @include scrollbar;
   display: flex;
   background-color: color("bg1");
 

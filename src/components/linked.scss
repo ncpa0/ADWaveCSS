@@ -5,14 +5,18 @@
     flex-direction: row;
     flex-wrap: nowrap;
 
-    & > :is(.btn, .input) {
-      &:not(:first-child) {
+    & > :not(:first-child) {
+      &:is(.btn, .input),
+      &:is(.btn-wrapper, .input-wrapper) > :is(.btn, .input) {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         border-left: 0.5px solid color("dimmed");
       }
+    }
 
-      &:not(:last-child) {
+    & > :not(:last-child) {
+      &:is(.btn, .input),
+      &:is(.btn-wrapper, .input-wrapper) > :is(.btn, .input) {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         border-right: 0.5px solid color("dimmed");
@@ -23,14 +27,18 @@
   &.vertical {
     flex-direction: column;
 
-    & > :is(.btn, .input) {
-      &:not(:first-child) {
+    & > :not(:first-child) {
+      &:is(.btn, .input),
+      &:is(.btn-wrapper, .input-wrapper) > :is(.btn, .input) {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-top: 0.5px solid color("dimmed");
       }
+    }
 
-      &:not(:last-child) {
+    & > :not(:last-child) {
+      &:is(.btn, .input),
+      &:is(.btn-wrapper, .input-wrapper) > :is(.btn, .input) {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         border-bottom: 0.5px solid color("dimmed");

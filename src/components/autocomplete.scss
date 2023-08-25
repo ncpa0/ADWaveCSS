@@ -1,0 +1,25 @@
+.autocomplete {
+  @include scrollbar;
+  background-color: color("btn");
+
+  &.top {
+    border-top-left-radius: size("cradius");
+    border-top-right-radius: size("cradius");
+  }
+
+  &:not(.top) {
+    border-bottom-left-radius: size("cradius");
+    border-bottom-right-radius: size("cradius");
+  }
+
+  .autocomplete-option {
+    background-color: color("bg3");
+    background-clip: padding-box;
+    transition: background-color 0.1s;
+    padding: 0.5em;
+
+    &.active {
+      background-color: color("bg4");
+    }
+  }
+}

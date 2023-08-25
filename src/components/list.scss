@@ -1,4 +1,5 @@
 .list {
+  @include scrollbar;
   $listBorderRadius: size("cradius");
   $listSeparatorColor: transparent;
 

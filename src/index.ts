@@ -16,6 +16,7 @@ export class Button {
   static readonly pill = "pill";
   static readonly circular = "circular";
   static readonly toggled = "toggled";
+  static readonly wrapper = "btn-wrapper";
 }
 
 export class Card {
@@ -35,6 +36,7 @@ export class Input {
   static readonly input = "input";
   static readonly linked = "linked";
   static readonly linkedVertical = "vertical";
+  static readonly wrapper = "input-wrapper";
 }
 
 export class List {
@@ -74,6 +76,12 @@ export class Typography {
   static readonly header = "header";
 }
 
+export class Autocomplete {
+  static readonly autocomplete = "autocomplete";
+  static readonly option = "autocomplete-option";
+  static readonly active = "active";
+}
+
 Object.freeze(Theme);
 Object.freeze(Box);
 Object.freeze(Button);
@@ -87,6 +95,7 @@ Object.freeze(NavSidebar);
 Object.freeze(Slider);
 Object.freeze(Switch);
 Object.freeze(Typography);
+Object.freeze(Autocomplete);
 
 export default {
   Theme,
@@ -102,4 +111,5 @@ export default {
   Slider,
   Switch,
   Typography,
+  Autocomplete,
 } as const;
