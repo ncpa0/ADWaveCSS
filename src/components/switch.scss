@@ -13,7 +13,7 @@ $swBtnMargin: 0.15em;
     margin: $swBtnMargin;
     height: calc($swBtnDim - (2 * $swBtnMargin));
     width: calc($swBtnDim - (2 * $swBtnMargin));
-    background-color: color("fg");
+    background-color: rgb(242 242 242);
     position: relative;
     top: 0px;
     left: 0px;
@@ -21,7 +21,7 @@ $swBtnMargin: 0.15em;
   }
 
   &.active {
-    background-color: color("primary");
+    background-color: color("primary-600");
 
     .switch-knob {
       left: $swBtnDim;

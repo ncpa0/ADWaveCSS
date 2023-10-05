@@ -1,16 +1,15 @@
 .message {
-  color: color("text-primary");
   font-family: "Ubuntu", sans-serif;
 
   &.success {
-    color: color("text-success");
+    color: color("success-text");
   }
 
   &.alert {
-    color: color("text-alert");
+    color: color("alert-text");
   }
 
   &.error {
-    color: color("text-error");
+    color: color("error-text");
   }
 }

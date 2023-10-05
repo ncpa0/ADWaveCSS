@@ -11,34 +11,36 @@
     border 0.2s;
 
   &.primary {
-    background-color: color("primary-darker");
+    background-color: color("primary-300");
+    color: color("primary-text");
 
     &:hover {
-      background-color: color("primary-hover");
+      background-color: color("primary-500");
     }
 
     &:active {
-      background-color: color("primary-pressed");
+      background-color: color("primary-200");
     }
 
     &.toggled {
-      background-color: color("primary-highlighted");
+      background-color: color("primary-100");
     }
   }
 
   &.danger {
-    background-color: color("danger");
+    background-color: color("danger-400");
+    color: color("danger-text");
 
     &:hover {
-      background-color: color("danger-hover");
+      background-color: color("danger-600");
     }
 
     &:active {
-      background-color: color("danger-pressed");
+      background-color: color("danger-300");
     }
 
     &.toggled {
-      background-color: color("danger-highlighted");
+      background-color: color("danger-500");
     }
   }
 
@@ -54,7 +56,7 @@
     }
 
     &.toggled {
-      background-color: color("btn-highlighted");
+      background-color: color("btn-toggled");
     }
   }
 
@@ -70,7 +72,7 @@
   }
 
   &.toggled {
-    background-color: color("btn-highlighted");
+    background-color: color("btn-toggled");
   }
 
   &:hover {
