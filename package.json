@@ -1,6 +1,27 @@
 {
   "name": "adwavecss",
+  "displayName": "ADWaveCSS",
+  "version": "0.0.1",
   "description": "Adwaita/GTK inspired CSS for the web.",
+  "keywords": [
+    "css",
+    "ui",
+    "adwaita",
+    "gtk",
+    "gnome",
+    "style",
+    "theme",
+    "adwave",
+    "button",
+    "input",
+    "switch",
+    "slider",
+    "typography"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ncpa0/ADWaveCSS.git"
+  },
   "packageManager": "yarn@3.6.2",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -8,7 +29,7 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./css": "./dist/styles.css"
+    "./dist/styles": "./dist/styles.css"
   },
   "scripts": {
     "build:js": "tsc",

@@ -68,6 +68,7 @@ export class Slider {
 export class Switch {
   static readonly switch = "switch";
   static readonly knob = "switch-knob";
+  static readonly active = "active";
 }
 
 export class Typography {
