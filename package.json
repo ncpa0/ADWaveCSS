@@ -12,11 +12,14 @@
   "scripts": {
     "build:js": "tsc",
     "watch:js": "tsc --watch",
-    "build:css": "sass src/main.scss dist/styles.css --no-source-map",
-    "watch:css": "sass src/main.scss dist/styles.css --no-source-map --watch",
+    "build:css": "sass src/main.scss dist/styles.css --style=compressed --no-source-map",
+    "build:css:dev": "sass src/main.scss dist/styles.css",
+    "watch:css": "sass src/main.scss dist/styles.css --watch",
     "build": "yarn build:js && yarn build:css",
+    "build:dev": "yarn build:js && yarn build:css:dev",
     "watch": "yarn watch:js & yarn watch:css",
-    "format": "prettier --write ./src/**/*.{scss, ts}"
+    "format": "prettier --write ./src/**/*.{scss, ts}",
+    "release": "gio trash ./dist/* && yarn build"
   },
   "devDependencies": {
     "prettier": "latest",
