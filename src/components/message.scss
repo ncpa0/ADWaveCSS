@@ -2,14 +2,14 @@
   font-family: "Ubuntu", sans-serif;
 
   &.success {
-    color: color("success-text");
+    color: color("success-fg");
   }
 
   &.alert {
-    color: color("alert-text");
+    color: color("alert-fg");
   }
 
   &.error {
-    color: color("error-text");
+    color: color("error-fg");
   }
 }

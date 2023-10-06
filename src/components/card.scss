@@ -1,11 +1,11 @@
 .card {
-  border-radius: size("cradius");
-  background-color: color("bg2");
+  border-radius: size("bradius");
+  background-color: color("bg3");
   padding: 0.85em 1.15em;
 
   &.activable {
     &:hover {
-      background-color: color("dimmed");
+      background-color: nativeLighten(color("bg3"), 5%);
     }
   }
 }

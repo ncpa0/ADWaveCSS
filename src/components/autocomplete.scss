@@ -3,13 +3,13 @@
   background-color: color("btn");
 
   &.top {
-    border-top-left-radius: size("cradius");
-    border-top-right-radius: size("cradius");
+    border-top-left-radius: size("bradius");
+    border-top-right-radius: size("bradius");
   }
 
   &:not(.top) {
-    border-bottom-left-radius: size("cradius");
-    border-bottom-right-radius: size("cradius");
+    border-bottom-left-radius: size("bradius");
+    border-bottom-right-radius: size("bradius");
   }
 
   .autocomplete-option {

@@ -14,7 +14,7 @@
     background-color: color("primary-300");
     color: color("primary-text");
 
-    &:hover {
+    &:hover:not(.toggled) {
       background-color: color("primary-500");
     }
 
@@ -31,7 +31,7 @@
     background-color: color("danger-400");
     color: color("danger-text");
 
-    &:hover {
+    &:hover:not(.toggled) {
       background-color: color("danger-600");
     }
 
@@ -63,19 +63,25 @@
   &.circular {
     width: 2.5em;
     height: 2.5em;
-    border-radius: 18px;
+    border-radius: 5em;
+    padding: unset;
+  }
+
+  &.square {
+    width: 2.5em;
+    height: 2.5em;
     padding: unset;
   }
 
   &.pill {
-    border-radius: 18px;
+    border-radius: 5em;
   }
 
   &.toggled {
     background-color: color("btn-toggled");
   }
 
-  &:hover {
+  &:hover:not(.toggled) {
     background-color: color("btn-hover");
   }
 

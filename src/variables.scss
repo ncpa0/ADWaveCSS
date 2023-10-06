@@ -70,7 +70,6 @@ $colorNames: (
 
 $sizes: (
   bradius: --border-radius,
-  cradius: --card-radius,
 );
 
 @function sizeName($name) {
@@ -83,7 +82,6 @@ $sizes: (
 
 :root {
   #{sizeName("bradius")}: 10px;
-  #{sizeName("cradius")}: 8px;
 }
 
 $lighter-1: 5%;
@@ -104,7 +102,7 @@ $darker-4: 30%;
   $bgFourthColor: #545454;
   $dimmedColor: lighten($bgSecondColor, 2%);
   $highlightColor: lighten($bgSecondColor, 20%);
-  $btnColor: #454545;
+  $btnColor: #373737;
 
   $textColor: #eeeeec;
   $textSecondaryColor: #a0a0a0;
@@ -142,10 +140,10 @@ $darker-4: 30%;
   #{colorName("highlight")}: $highlightColor;
   #{colorName("dimmed")}: $dimmedColor;
   #{colorName("btn")}: $btnColor;
-  #{colorName("btn-toggled")}: lighten($btnColor, 5%);
-  #{colorName("btn-hover")}: lighten($btnColor, 8%);
-  #{colorName("btn-pressed")}: darken($btnColor, 10%);
-  #{colorName("btn-border")}: darken($btnColor, 10%);
+  #{colorName("btn-toggled")}: nativeDarken($btnColor, 15%);
+  #{colorName("btn-hover")}: nativeLighten($btnColor, 8%);
+  #{colorName("btn-pressed")}: nativeDarken($btnColor, 10%);
+  #{colorName("btn-border")}: nativeDarken($btnColor, 10%);
   #{colorName("primary-text")}: $accentText;
   #{colorName("primary-000")}: nativeDarken($accentColor, $darker-4);
   #{colorName("primary-100")}: nativeDarken($accentColor, $darker-3);
@@ -177,7 +175,7 @@ $darker-4: 30%;
 .light-theme {
   $bgColor: #ffffff;
   $bgSecondColor: #e9e9e9;
-  $bgThirdColor: #f4f4f4;
+  $bgThirdColor: #f1f1f1;
   $bgFourthColor: #cdcdcd;
   $dimmedColor: lighten($bgSecondColor, 2%);
   $highlightColor: lighten($bgSecondColor, 20%);

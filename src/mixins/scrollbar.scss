@@ -2,18 +2,18 @@
   &::-webkit-scrollbar {
     background-color: transparent;
     width: 8px;
-    border-radius: size("cradius");
+    border-radius: size("bradius");
   }
 
   &::-webkit-scrollbar-track {
     margin-bottom: 6px;
     margin-top: 6px;
-    border-radius: size("cradius");
+    border-radius: size("bradius");
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: color("bg4");
-    border-radius: size("cradius");
+    border-radius: size("bradius");
   }
 
   &::-webkit-scrollbar-track:hover {

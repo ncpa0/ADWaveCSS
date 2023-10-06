@@ -45,7 +45,15 @@ Pill buttons have a very high border radius, when there's no text inside them th
 Circualr buttons are always circles of a fixed width and height. Those can be scaled up and down by adjusting the font size.
 
 ```html
-<button class="btn circular">Click Me</button>
+<button class="btn circular">x</button>
+```
+
+## Square Button
+
+Square buttons are always squares of a fixed width and height. Those can be scaled up and down by adjusting the font size.
+
+```html
+<button class="btn square">...</button>
 ```
 
 ## Toggled Button

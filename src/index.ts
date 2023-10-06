@@ -15,6 +15,7 @@ export class Button {
   static readonly flat = "flat";
   static readonly pill = "pill";
   static readonly circular = "circular";
+  static readonly square = "square";
   static readonly toggled = "toggled";
   static readonly wrapper = "btn-wrapper";
 }

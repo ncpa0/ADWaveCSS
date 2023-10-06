@@ -1,13 +1,13 @@
 .checkbox {
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
+  background-color: white;
   font: inherit;
   color: currentColor;
   width: 1.2em;
   height: 1.2em;
   margin: 0.1em;
-  border: 1px solid color("dimmed");
+  border: 1px solid color("btn");
   border-radius: 18px;
   transform: translateY(-0.075em);
   display: grid;

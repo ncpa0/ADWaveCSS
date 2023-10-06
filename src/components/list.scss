@@ -1,12 +1,12 @@
 .list {
   @include scrollbar;
-  $listBorderRadius: size("cradius");
+  $listBorderRadius: size("bradius");
   $listSeparatorColor: transparent;
 
   border-radius: $listBorderRadius;
 
   .list-element {
-    background-color: color("bg2");
+    background-color: color("bg3");
     background-clip: padding-box;
     transition: background-color 0.1s;
     padding: 1em 1.15em;
@@ -31,7 +31,7 @@
 
     &.activable {
       &:hover {
-        background-color: color("dimmed");
+        background-color: nativeLighten(color("bg3"), 5%);
       }
     }
   }
