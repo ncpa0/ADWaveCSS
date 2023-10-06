@@ -1,1 +1,3 @@
-# gtk-css-web
+# ADWaveCSS
+
+Adwaita/GTK inspired CSS for the web.

@@ -1,5 +1,6 @@
 {
-  "name": "gtk-css-web",
+  "name": "adwavecss",
+  "description": "Adwaita/GTK inspired CSS for the web.",
   "packageManager": "yarn@3.6.2",
   "types": "./dist/index.d.ts",
   "exports": {
