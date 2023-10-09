@@ -87,6 +87,16 @@ export class Suggestions {
   static readonly top = "top";
 }
 
+export class Selector {
+  static readonly selector = "selector";
+  static readonly selectedOption = "selected-option";
+  static readonly downButton = "down-button";
+  static readonly opened = "opened";
+  static readonly optionsList = "options-list";
+  static readonly option = "option";
+  static readonly noPosition = "no-position";
+}
+
 Object.freeze(Theme);
 Object.freeze(Box);
 Object.freeze(Button);
@@ -101,6 +111,7 @@ Object.freeze(Slider);
 Object.freeze(Switch);
 Object.freeze(Typography);
 Object.freeze(Suggestions);
+Object.freeze(Selector);
 
 export default {
   Theme,
@@ -117,4 +128,5 @@ export default {
   Switch,
   Typography,
   Suggestions,
+  Selector,
 } as const;
