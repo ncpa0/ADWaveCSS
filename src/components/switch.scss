@@ -27,4 +27,9 @@ $swBtnMargin: 0.15em;
       left: $swBtnDim;
     }
   }
+
+  &:focus-visible {
+    outline: solid 2px color("focus");
+    outline-offset: 2px;
+  }
 }

@@ -14,11 +14,12 @@
     background-color: color("primary-300");
     color: color("primary-text");
 
-    &:hover:not(.toggled) {
+    &:not(.toggled):hover {
       background-color: color("primary-500");
     }
 
-    &:active {
+    // double the active selector to increase specificity
+    &:active:active {
       background-color: color("primary-200");
     }
 
@@ -31,11 +32,12 @@
     background-color: color("danger-400");
     color: color("danger-text");
 
-    &:hover:not(.toggled) {
+    &:not(.toggled):hover {
       background-color: color("danger-600");
     }
 
-    &:active {
+    // double the active selector to increase specificity
+    &:active:active {
       background-color: color("danger-300");
     }
 
@@ -51,7 +53,8 @@
       background-color: color("btn");
     }
 
-    &:active {
+    // double the active selector to increase specificity
+    &:active:active {
       background-color: color("btn-pressed");
     }
 
@@ -81,15 +84,17 @@
     background-color: color("btn-toggled");
   }
 
-  &:hover:not(.toggled) {
+  &:not(.toggled):hover {
     background-color: color("btn-hover");
   }
 
-  &:active {
+  // double the active selector to increase specificity
+  &:active:active {
     background-color: color("btn-pressed");
   }
 
-  &:focus {
-    outline: 2px dotted color("highlight");
+  &:focus-visible {
+    outline: solid 2px color("focus");
+    outline-offset: -2px;
   }
 }

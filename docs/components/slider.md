@@ -2,12 +2,12 @@
 
 # Slider
 
-There are three classes that can be used to construct a custom slider component: `slider-track`, `slider-progress` and `slider-thumb`.
+There are four classes that can be used to construct a custom slider component: `slider`, `slider-track`, `slider-progress` and `slider-thumb`.
 
 Here's how it could be constructed:
 
 ```html
-<div class="my-slider">
+<div class="slider">
   <span class="slider-track"></span>
   <span class="slider-progress"></span>
   <span class="slider-thumb">
@@ -16,4 +16,4 @@ Here's how it could be constructed:
 </div>
 ```
 
-Note that you will still have to manually position these elements correctly and manage the progress and thumb positions as the value changes via JavaScript.
+`slider` has a relative position and the others have the absolute position, a `no-position` class can be added to them to have those elements not include any position property.

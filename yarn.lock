@@ -49,6 +49,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"adwavecss@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "adwavecss@workspace:."
+  dependencies:
+    prettier: latest
+    sass: latest
+    typescript: latest
+  languageName: unknown
+  linkType: soft
+
 "agent-base@npm:6, agent-base@npm:^6.0.2":
   version: 6.0.2
   resolution: "agent-base@npm:6.0.2"
@@ -472,16 +482,6 @@ __metadata:
   checksum: ac85f94da92d8eb6b7f5a8b20ce65e43d66761c55ce85ac96df6865308390da45a8d3f0296dd3a663de65d30ba497bd46c696cc1e248c72b13d6d567138a4fc7
   languageName: node
   linkType: hard
-
-"gtk-css-web@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "gtk-css-web@workspace:."
-  dependencies:
-    prettier: latest
-    sass: latest
-    typescript: latest
-  languageName: unknown
-  linkType: soft
 
 "has-unicode@npm:^2.0.1":
   version: 2.0.1

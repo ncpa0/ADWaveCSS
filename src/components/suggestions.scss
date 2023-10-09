@@ -1,4 +1,4 @@
-.autocomplete {
+.suggestions {
   @include scrollbar;
   background-color: color("btn");
 
@@ -12,7 +12,7 @@
     border-bottom-right-radius: size("bradius");
   }
 
-  .autocomplete-option {
+  .suggestions-option {
     background-color: color("bg3");
     background-clip: padding-box;
     transition: background-color 0.1s;

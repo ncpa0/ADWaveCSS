@@ -15,12 +15,21 @@
     transition: background-color 0.1s;
     font-family: "Ubuntu", sans-serif;
 
+    &.active {
+      background-color: color("bg2");
+    }
+
     &:hover {
       background-color: color("bg3");
     }
 
-    &.active {
-      background-color: color("bg2");
+    &:active {
+      background-color: color("bg4");
+    }
+
+    &:focus-visible {
+      outline: solid 2px color("focus");
+      outline-offset: -2px;
     }
   }
 }

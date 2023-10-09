@@ -33,9 +33,10 @@
     opacity: 1;
   }
 
-  // &:focus {
-  //   outline: 1px solid currentColor;
-  // }
+  &:focus-visible {
+    outline: solid 2px color("focus");
+    outline-offset: 2px;
+  }
 
   &:disabled {
     color: grey;

@@ -1,21 +1,58 @@
-.slider-track {
-  height: 0.3em;
-  border-radius: 18px;
-  background-color: color("btn");
-  border: 1px solid color("btn-border");
-}
+$noPositionClassName: ".no-position";
 
-.slider-progress {
-  height: 0.3em;
-  border-radius: 18px;
-  background-color: color("primary-400");
-  border: 1px solid color("btn-border");
-}
+.slider {
+  flex: 1;
+  min-height: 1em;
+  border-radius: 6px;
 
-.slider-thumb {
-  height: 0.75em;
-  width: 0.75em;
-  border-radius: 18px;
-  background-color: color("btn");
-  border: 0.8px solid color("btn-border");
+  &:not(#{$noPositionClassName}) {
+    position: relative;
+  }
+
+  &:focus-visible {
+    outline: solid 2px color("focus");
+    outline-offset: 2px;
+  }
+
+  .slider-track {
+    height: 0.3em;
+    border-radius: 18px;
+    background-color: color("btn");
+    border: 1px solid color("btn-border");
+
+    &:not(#{$noPositionClassName}) {
+      position: absolute;
+      top: 0.3em;
+      left: 0px;
+      right: 0px;
+    }
+  }
+
+  .slider-progress {
+    height: 0.3em;
+    border-radius: 18px;
+    background-color: color("primary-400");
+    border: 1px solid color("btn-border");
+
+    &:not(#{$noPositionClassName}) {
+      position: absolute;
+      top: 0.3em;
+      left: 0px;
+      right: 100%;
+    }
+  }
+
+  .slider-thumb {
+    height: 0.75em;
+    width: 0.75em;
+    border-radius: 18px;
+    background-color: color("btn");
+    border: 0.8px solid color("btn-border");
+
+    &:not(#{$noPositionClassName}) {
+      position: absolute;
+      top: 0.1em;
+      left: calc(0% - 0.3em);
+    }
+  }
 }

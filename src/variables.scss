@@ -24,6 +24,7 @@ $colorNames: (
   btn-hover: --clr-btn-hover,
   btn-pressed: --clr-btn-pressed,
   btn-border: --clr-btn-border,
+  focus: --clr-focus,
   border: --clr-border,
   primary-text: --clr-primary-text,
   primary-000: --clr-primary-000,
@@ -81,7 +82,7 @@ $sizes: (
 }
 
 :root {
-  #{sizeName("bradius")}: 10px;
+  #{sizeName("bradius")}: 8px;
 }
 
 $lighter-1: 5%;
@@ -99,10 +100,11 @@ $darker-4: 30%;
   $bgColor: #121212;
   $bgSecondColor: #363636;
   $bgThirdColor: #242424;
-  $bgFourthColor: #545454;
+  $bgFourthColor: #474747;
   $dimmedColor: lighten($bgSecondColor, 2%);
   $highlightColor: lighten($bgSecondColor, 20%);
   $btnColor: #373737;
+  $focusColor: #546f8e;
 
   $textColor: #eeeeec;
   $textSecondaryColor: #a0a0a0;
@@ -144,6 +146,7 @@ $darker-4: 30%;
   #{colorName("btn-hover")}: nativeLighten($btnColor, 8%);
   #{colorName("btn-pressed")}: nativeDarken($btnColor, 10%);
   #{colorName("btn-border")}: nativeDarken($btnColor, 10%);
+  #{colorName("focus")}: $focusColor;
   #{colorName("primary-text")}: $accentText;
   #{colorName("primary-000")}: nativeDarken($accentColor, $darker-4);
   #{colorName("primary-100")}: nativeDarken($accentColor, $darker-3);
@@ -180,6 +183,7 @@ $darker-4: 30%;
   $dimmedColor: lighten($bgSecondColor, 2%);
   $highlightColor: lighten($bgSecondColor, 20%);
   $btnColor: #d8d8d8;
+  $focusColor: #8db8ec;
 
   $textColor: rgba(0, 0, 0, 0.8);
   $textSecondaryColor: #686868;
@@ -221,6 +225,7 @@ $darker-4: 30%;
   #{colorName("btn-hover")}: lighten($btnColor, 6%);
   #{colorName("btn-pressed")}: darken($btnColor, 8.25%);
   #{colorName("btn-border")}: darken($btnColor, 9%);
+  #{colorName("focus")}: $focusColor;
   #{colorName("primary-text")}: $accentText;
   #{colorName("primary-000")}: nativeDarken($accentColor, $darker-4);
   #{colorName("primary-100")}: nativeDarken($accentColor, $darker-3);

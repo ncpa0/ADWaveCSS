@@ -60,9 +60,11 @@ export class NavSidebar {
 }
 
 export class Slider {
+  static readonly slider = "slider";
   static readonly track = "slider-track";
   static readonly progress = "slider-progress";
   static readonly thumb = "slider-thumb";
+  static readonly noPosition = "no-position";
 }
 
 export class Switch {
@@ -78,10 +80,11 @@ export class Typography {
   static readonly header = "header";
 }
 
-export class Autocomplete {
-  static readonly autocomplete = "autocomplete";
-  static readonly option = "autocomplete-option";
+export class Suggestions {
+  static readonly suggestions = "suggestions";
+  static readonly option = "suggestions-option";
   static readonly active = "active";
+  static readonly top = "top";
 }
 
 Object.freeze(Theme);
@@ -97,7 +100,7 @@ Object.freeze(NavSidebar);
 Object.freeze(Slider);
 Object.freeze(Switch);
 Object.freeze(Typography);
-Object.freeze(Autocomplete);
+Object.freeze(Suggestions);
 
 export default {
   Theme,
@@ -113,5 +116,5 @@ export default {
   Slider,
   Switch,
   Typography,
-  Autocomplete,
+  Suggestions,
 } as const;
