@@ -1,11 +1,12 @@
 $noPositionClassName: ".no-position";
+$elementHeight: 1.8em;
 
 .selector {
   background-color: color("btn");
   border-radius: size("bradius");
   border: 1px solid color("btn");
   font-family: "Ubuntu", sans-serif;
-  height: 1.8em;
+  height: $elementHeight;
   display: flex;
   flex-direction: row;
   cursor: pointer;
@@ -31,7 +32,7 @@ $noPositionClassName: ".no-position";
   .down-button {
     border-bottom-right-radius: size("bradius");
     border-top-right-radius: size("bradius");
-    width: 1.8em;
+    width: $elementHeight;
     height: 100%;
     position: relative;
 
@@ -59,15 +60,33 @@ $noPositionClassName: ".no-position";
     border-radius: size("bradius");
     background-color: color("bg2");
     padding: 0.4em;
-    margin-top: 0.3em;
     display: flex;
     flex-direction: column;
 
+    $listMargin: 0.3em;
+
+    &.top {
+      margin-bottom: $listMargin;
+    }
+
+    &:not(.top) {
+      margin-top: $listMargin;
+    }
+
     &:not(#{$noPositionClassName}) {
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      top: 1.8em;
+      &.top {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: $elementHeight;
+      }
+
+      &:not(.top) {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: $elementHeight;
+      }
     }
 
     .option {

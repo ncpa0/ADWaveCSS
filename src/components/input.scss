@@ -1,12 +1,13 @@
 .input {
   background-color: color("btn");
   border-radius: size("bradius");
-  border: 1px solid color("btn");
+  outline: 1px solid color("btn");
+  outline-offset: -1px;
   padding: 0.3em 0.5em;
   font-family: "Ubuntu", sans-serif;
+  border: none;
 
   &.input.input:focus-visible {
-    outline: none;
-    border: 1px solid color("primary-300");
+    outline: 1px solid color("primary-300");
   }
 }

@@ -94,6 +94,7 @@ export class Selector {
   static readonly opened = "opened";
   static readonly optionsList = "options-list";
   static readonly option = "option";
+  static readonly top = "top";
   static readonly noPosition = "no-position";
 }
 
