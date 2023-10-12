@@ -1,0 +1,7 @@
+/.yarn
+/docs
+/node_modules
+/.editorconfig
+/.gitignore
+/.yarnrc.yml
+/tsconfig.json

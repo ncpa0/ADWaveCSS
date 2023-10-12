@@ -1,6 +1,6 @@
 {
   "name": "adwavecss",
-  "displayName": "ADWaveCSS",
+  "displayName": "ADWave CSS",
   "version": "0.0.1",
   "description": "Adwaita/GTK inspired CSS for the web.",
   "keywords": [
@@ -41,7 +41,7 @@
     "build:dev": "yarn build:js && yarn build:css:dev",
     "watch": "yarn watch:js & yarn watch:css",
     "format": "prettier --write ./src/**/*.{scss, ts}",
-    "release": "gio trash ./dist/* && yarn build"
+    "release": "gio trash ./dist/* && yarn build && npm publish --access public"
   },
   "devDependencies": {
     "prettier": "latest",
