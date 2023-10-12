@@ -31,3 +31,10 @@ Error message has a red font color.
 ```html
 <p class="message error">Success!</p>
 ```
+
+# Class Names
+
+- `message` - an element housing a text message
+- `success` - changes the color of the message text to green
+- `alert` - changes the color of the message text to yellow
+- `error` - changes the color of the message text to red

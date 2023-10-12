@@ -21,3 +21,10 @@ Navigation sidebar is a container for a list of navigation buttons. It is intend
 When a `nav-sidebar-btn` has the `active` class name, it's background color will change.
 
 To create sections of the sidebar a [separator](./separator.md) can be used.
+
+# Class Names
+
+- `nav-sidebar` - a container for the navigation buttons
+- `nav-sidebar-btn` - a navigation button
+- `active` - a class that should be added to the navigation button when it is active, changes the background color of that button
+- `separator` - creates a horizontal line that separates different sections of the sidebar

@@ -23,3 +23,8 @@ To create a group of buttons and/or inputs in a vertical orientation use the `ve
   <button class="btn">3</btn>
 </div>
 ```
+
+# Class Names
+
+- `linked` - a container element for buttons and inputs that are linked together
+- `vertical` - a class that should be added to the container when it is oriented vertically

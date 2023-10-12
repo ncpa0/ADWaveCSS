@@ -63,3 +63,15 @@ When a button is togglable (similarly to a checkbox), `toggled` class can be use
 ```html
 <button class="btn toggled">Click Me</button>
 ```
+
+# Class Names
+
+- `btn` - any button element
+- `primary` - a button with the accent color as it's background
+- `danger` - a button with the danger color as it's background
+- `flat` - a button with no background color when not hovered over or pressed
+- `pill` - a button with a very high border radius
+- `circular` - a button in a shape of a circle with a fixed width and height
+- `square` - a button in a shape of a square with a fixed width and height
+- `toggled` - a button that's currently toggled on
+- `btn-wrapper` - a container element for the button that enables linking element via the `linked` class name when the button is inside some container rather than being the direct descendant of the `linked` element

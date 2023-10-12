@@ -15,3 +15,8 @@ Separator provides a simple horizontal or vertical line with a small margin arou
 ```html
 <span class="separator vertical"></span>
 ```
+
+# Class Names
+
+- `separator` - a horizontal separator
+- `vertical` - a class that changes the orientation of the separator to vertical

@@ -19,3 +19,8 @@ Card can be `activable` which will cause it's background color to change when ho
   <!-- content -->
 </div>
 ```
+
+# Class Names
+
+- `card` - a container element with a significant border radius and brighter background color than a regular box
+- `activable` - a class that should be added to the card element if it should change it's background color when hovered over

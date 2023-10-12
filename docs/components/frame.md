@@ -9,3 +9,7 @@ Frame class adds a simple non-rounded border around the element.
   <!-- content -->
 </div>
 ```
+
+# Class Names
+
+- `frame` - a container element with a simple non-rounded border

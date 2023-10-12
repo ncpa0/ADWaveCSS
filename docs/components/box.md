@@ -19,3 +19,8 @@ Box elements when the `light` class name is assigned to them change their backgr
   <!-- content -->
 </div>
 ```
+
+# Class Names
+
+- `box` - a container element with a flex display type
+- `light` - a class that should be added to the box element if it should have a brighter background color

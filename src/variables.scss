@@ -119,10 +119,10 @@ $darker-4: 30%;
   $errorFg: #ff7b63;
   $errorBg: #c01c28;
 
-  $accentColor: var(--g-accent, #3584e4);
-  $accentText: var(--g-accent-text, #ffffff);
-  $dangerColor: var(--g-danger, #c01c28);
-  $dangerText: var(--g-danger-text, #ffffff);
+  $accentColor: var(--clr-accent, #3584e4);
+  $accentText: var(--clr-accent-text, #ffffff);
+  $dangerColor: var(--clr-danger, #c01c28);
+  $dangerText: var(--clr-danger-text, #ffffff);
 
   #{colorName("bg1")}: $bgColor;
   #{colorName("bg2")}: $bgSecondColor;
@@ -198,10 +198,10 @@ $darker-4: 30%;
   $errorFg: #c01c28;
   $errorBg: #e01b24;
 
-  $accentColor: var(--g-accent, #3584e4);
-  $accentText: var(--g-accent-text, #ffffff);
-  $dangerColor: var(--g-danger, #e01b24);
-  $dangerText: var(--g-danger-text, #ffffff);
+  $accentColor: var(--clr-accent, #3584e4);
+  $accentText: var(--clr-accent-text, #ffffff);
+  $dangerColor: var(--clr-danger, #e01b24);
+  $dangerText: var(--clr-danger-text, #ffffff);
 
   #{colorName("bg1")}: $bgColor;
   #{colorName("bg2")}: $bgSecondColor;

@@ -5,3 +5,7 @@
 ```html
 <input class="checkbox" type="checkbox" />
 ```
+
+# Class Names
+
+- `checkbox` - a checkbox element

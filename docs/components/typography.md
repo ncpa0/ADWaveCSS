@@ -39,3 +39,10 @@ Header is much bigger than regular text and is bolder.
   <!-- text -->
 </p>
 ```
+
+# Class Names
+
+- `text` - regular text
+- `subtitle` - subtitle text
+- `label` - label text
+- `header` - header text

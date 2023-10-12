@@ -21,3 +21,10 @@ Depending on whether the suggestions will be displayed above or below the input,
   <div class="suggestions-option">Option 3</div>
 </div>
 ```
+
+# Class Names
+
+- `suggestions` - a container element for the suggestions
+- `suggestions-option` - a suggestion option element
+- `active` - currently highlighted suggestion option
+- `top` - a class that should be added to the suggestions container if the list should be positioned upwards, instead of downwards as it is by default
