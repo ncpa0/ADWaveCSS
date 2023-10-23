@@ -67,6 +67,7 @@ When a button is togglable (similarly to a checkbox), `toggled` class can be use
 # Class Names
 
 - `btn` - any button element
+- `adaptive` - changes the background color of regular button to a semi-transparent color that better adapts to different background colors
 - `primary` - a button with the accent color as it's background
 - `danger` - a button with the danger color as it's background
 - `flat` - a button with no background color when not hovered over or pressed

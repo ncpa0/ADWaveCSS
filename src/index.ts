@@ -57,6 +57,10 @@ export class Button {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/button.md#ClassNames
    */
   static readonly wrapper = "btn-wrapper";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/button.md#ClassNames
+   */
+  static readonly adaptive = "adaptive";
 }
 
 /**
