@@ -1,4 +1,5 @@
 .btn {
+  cursor: pointer;
   background-color: color("btn");
   border-radius: size("bradius");
   font-family: "Ubuntu", sans-serif;
@@ -10,11 +11,28 @@
     background-color 0.2s,
     border 0.2s;
 
+  &.adaptive {
+    background-color: color("btn-adaptive");
+
+    &.toggled {
+      background-color: color("btn-adaptive-toggled");
+    }
+
+    // double the active selector to increase specificity
+    &:not(.toggled):active:active {
+      background-color: color("btn-adaptive-pressed");
+    }
+
+    &:hover:not(.toggled) {
+      background-color: color("btn-adaptive-hover");
+    }
+  }
+
   &.primary {
     background-color: color("primary-300");
     color: color("primary-text");
 
-    &:not(.toggled):hover {
+    &:hover:not(.toggled) {
       background-color: color("primary-500");
     }
 
@@ -32,7 +50,7 @@
     background-color: color("danger-400");
     color: color("danger-text");
 
-    &:not(.toggled):hover {
+    &:hover:not(.toggled) {
       background-color: color("danger-600");
     }
 
@@ -53,13 +71,25 @@
       background-color: color("btn");
     }
 
+    &.adaptive:hover {
+      background-color: color("btn-adaptive");
+    }
+
     // double the active selector to increase specificity
     &:active:active {
       background-color: color("btn-pressed");
+
+      &.adaptive {
+        background-color: color("btn-adaptive-pressed");
+      }
     }
 
     &.toggled {
       background-color: color("btn-toggled");
+
+      &.adaptive {
+        background-color: color("btn-adaptive-toggled");
+      }
     }
   }
 
@@ -84,12 +114,12 @@
     background-color: color("btn-toggled");
   }
 
-  &:not(.toggled):hover {
+  &:hover:not(.toggled) {
     background-color: color("btn-hover");
   }
 
   // double the active selector to increase specificity
-  &:active:active {
+  &:not(.toggled):active:active {
     background-color: color("btn-pressed");
   }
 

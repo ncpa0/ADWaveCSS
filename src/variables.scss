@@ -1,10 +1,12 @@
 @use "sass:map";
+@use "sass:math";
 
 $colorNames: (
-  bg1: --clr-bg,
-  bg2: --clr-bg-second,
-  bg3: --clr-bg-third,
-  bg4: --clr-bg-fourth,
+  bg1: --clr-bg-1,
+  bg2: --clr-bg-2,
+  bg3: --clr-bg-3,
+  bg4: --clr-bg-4,
+  bg5: --clr-bg-5,
   fg: --clr-fg,
   text: --clr-text,
   text-secondary: --clr-text-secondary,
@@ -17,13 +19,15 @@ $colorNames: (
   error-text: --clr-error-text,
   error-fg: --clr-error-fg,
   error-bg: --clr-error-bg,
-  highlight: --clr-highlight,
   dimmed: --clr-dimmed,
   btn: --clr-btn,
   btn-toggled: --clr-btn-toggled,
   btn-hover: --clr-btn-hover,
   btn-pressed: --clr-btn-pressed,
-  btn-border: --clr-btn-border,
+  btn-adaptive: --clr-btn-adaptive,
+  btn-adaptive-toggled: --clr-btn-adaptive-toggled,
+  btn-adaptive-hover: --clr-btn-adaptive-hover,
+  btn-adaptive-pressed: --clr-btn-adaptive-pressed,
   focus: --clr-focus,
   border: --clr-border,
   primary-text: --clr-primary-text,
@@ -97,13 +101,14 @@ $darker-3: 20%;
 $darker-4: 30%;
 
 .dark-theme {
-  $bgColor: #121212;
-  $bgSecondColor: #363636;
-  $bgThirdColor: #242424;
-  $bgFourthColor: #474747;
-  $dimmedColor: lighten($bgSecondColor, 2%);
-  $highlightColor: lighten($bgSecondColor, 20%);
-  $btnColor: #373737;
+  $bgColor1: #121212;
+  $bgColor2: #242424;
+  $bgColor3: #363636;
+  $bgColor4: #484848;
+  $bgColor5: #606060;
+  $dimmedColor: lighten($bgColor2, 5%);
+  $btnColor: #414141;
+  $btnAdaptiveColor: rgb(96 96 96 / 55%);
   $focusColor: #546f8e;
 
   $textColor: #eeeeec;
@@ -124,10 +129,11 @@ $darker-4: 30%;
   $dangerColor: var(--clr-danger, #c01c28);
   $dangerText: var(--clr-danger-text, #ffffff);
 
-  #{colorName("bg1")}: $bgColor;
-  #{colorName("bg2")}: $bgSecondColor;
-  #{colorName("bg3")}: $bgThirdColor;
-  #{colorName("bg4")}: $bgFourthColor;
+  #{colorName("bg1")}: $bgColor1;
+  #{colorName("bg2")}: $bgColor2;
+  #{colorName("bg3")}: $bgColor3;
+  #{colorName("bg4")}: $bgColor4;
+  #{colorName("bg5")}: $bgColor5;
   #{colorName("text")}: $textColor;
   #{colorName("text-secondary")}: $textSecondaryColor;
   #{colorName("success-text")}: $successText;
@@ -139,13 +145,15 @@ $darker-4: 30%;
   #{colorName("error-text")}: $errorText;
   #{colorName("error-fg")}: $errorFg;
   #{colorName("error-bg")}: $errorBg;
-  #{colorName("highlight")}: $highlightColor;
   #{colorName("dimmed")}: $dimmedColor;
   #{colorName("btn")}: $btnColor;
-  #{colorName("btn-toggled")}: nativeDarken($btnColor, 15%);
-  #{colorName("btn-hover")}: nativeLighten($btnColor, 8%);
-  #{colorName("btn-pressed")}: nativeDarken($btnColor, 10%);
-  #{colorName("btn-border")}: nativeDarken($btnColor, 10%);
+  #{colorName("btn-toggled")}: darken($btnColor, 7%);
+  #{colorName("btn-hover")}: lighten($btnColor, 6%);
+  #{colorName("btn-pressed")}: darken($btnColor, 5%);
+  #{colorName("btn-adaptive")}: $btnAdaptiveColor;
+  #{colorName("btn-adaptive-toggled")}: darken($btnAdaptiveColor, 17.5%);
+  #{colorName("btn-adaptive-hover")}: lighten($btnAdaptiveColor, 5%);
+  #{colorName("btn-adaptive-pressed")}: darken($btnAdaptiveColor, 10%);
   #{colorName("focus")}: $focusColor;
   #{colorName("primary-text")}: $accentText;
   #{colorName("primary-000")}: nativeDarken($accentColor, $darker-4);
@@ -176,13 +184,14 @@ $darker-4: 30%;
 }
 
 .light-theme {
-  $bgColor: #ffffff;
-  $bgSecondColor: #e9e9e9;
-  $bgThirdColor: #f1f1f1;
-  $bgFourthColor: #cdcdcd;
-  $dimmedColor: lighten($bgSecondColor, 2%);
-  $highlightColor: lighten($bgSecondColor, 20%);
-  $btnColor: #d8d8d8;
+  $bgColor1: #fafafa;
+  $bgColor2: #e8e8e8;
+  $bgColor3: #d6d6d6;
+  $bgColor4: #c4c4c4;
+  $bgColor5: #b2b2b2;
+  $dimmedColor: darken($bgColor2, 5%);
+  $btnColor: #cecece;
+  $btnAdaptiveColor: rgb(133 133 133 / 26%);
   $focusColor: #8db8ec;
 
   $textColor: rgba(0, 0, 0, 0.8);
@@ -203,10 +212,11 @@ $darker-4: 30%;
   $dangerColor: var(--clr-danger, #e01b24);
   $dangerText: var(--clr-danger-text, #ffffff);
 
-  #{colorName("bg1")}: $bgColor;
-  #{colorName("bg2")}: $bgSecondColor;
-  #{colorName("bg3")}: $bgThirdColor;
-  #{colorName("bg4")}: $bgFourthColor;
+  #{colorName("bg1")}: $bgColor1;
+  #{colorName("bg2")}: $bgColor2;
+  #{colorName("bg3")}: $bgColor3;
+  #{colorName("bg4")}: $bgColor4;
+  #{colorName("bg5")}: $bgColor5;
   #{colorName("text")}: $textColor;
   #{colorName("text-secondary")}: $textSecondaryColor;
   #{colorName("success-text")}: $successText;
@@ -218,13 +228,15 @@ $darker-4: 30%;
   #{colorName("error-text")}: $errorText;
   #{colorName("error-fg")}: $errorFg;
   #{colorName("error-bg")}: $errorBg;
-  #{colorName("highlight")}: $highlightColor;
   #{colorName("dimmed")}: $dimmedColor;
   #{colorName("btn")}: $btnColor;
-  #{colorName("btn-toggled")}: darken($btnColor, 5%);
-  #{colorName("btn-hover")}: lighten($btnColor, 6%);
-  #{colorName("btn-pressed")}: darken($btnColor, 8.25%);
-  #{colorName("btn-border")}: darken($btnColor, 9%);
+  #{colorName("btn-toggled")}: darken($btnColor, 15%);
+  #{colorName("btn-hover")}: darken($btnColor, 5%);
+  #{colorName("btn-pressed")}: darken($btnColor, 13%);
+  #{colorName("btn-adaptive")}: $btnAdaptiveColor;
+  #{colorName("btn-adaptive-toggled")}: darken($btnAdaptiveColor, 50%);
+  #{colorName("btn-adaptive-hover")}: darken($btnAdaptiveColor, 20%);
+  #{colorName("btn-adaptive-pressed")}: darken($btnAdaptiveColor, 40%);
   #{colorName("focus")}: $focusColor;
   #{colorName("primary-text")}: $accentText;
   #{colorName("primary-000")}: nativeDarken($accentColor, $darker-4);
