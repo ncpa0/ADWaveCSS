@@ -3,7 +3,19 @@
   display: flex;
   background-color: color("bg1");
 
-  &.light {
+  &.rounded {
+    border-radius: size("bradius");
+  }
+
+  &.bg-level-2 {
+    background-color: color("bg2");
+  }
+
+  &.bg-level-3 {
     background-color: color("bg3");
+  }
+
+  &.bg-level-4 {
+    background-color: color("bg4");
   }
 }
