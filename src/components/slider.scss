@@ -5,6 +5,14 @@ $noPositionClassName: ".no-position";
   min-height: 1em;
   border-radius: 6px;
 
+  &.disabled {
+    cursor: not-allowed;
+
+    .slider-progress {
+      background-color: color-mix(in srgb, color("btn") 65%, #dfdfdf);
+    }
+  }
+
   &:not(#{$noPositionClassName}) {
     position: relative;
   }
@@ -17,8 +25,7 @@ $noPositionClassName: ".no-position";
   .slider-track {
     height: 0.3em;
     border-radius: 18px;
-    background-color: color("btn");
-    border: 1px solid color("btn-border");
+    background-color: color-mix(in srgb, color("btn") 65%, #888888);
 
     &:not(#{$noPositionClassName}) {
       position: absolute;
@@ -46,8 +53,7 @@ $noPositionClassName: ".no-position";
     height: 0.75em;
     width: 0.75em;
     border-radius: 18px;
-    background-color: color("btn");
-    border: 0.8px solid color("btn-border");
+    background-color: color-mix(in srgb, color("btn") 50%, #888888);
 
     &:not(#{$noPositionClassName}) {
       position: absolute;

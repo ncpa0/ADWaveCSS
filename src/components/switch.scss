@@ -2,6 +2,7 @@ $swBtnDim: 1.7em;
 $swBtnMargin: 0.15em;
 
 .switch {
+  cursor: pointer;
   border-radius: 18px;
   background-color: color("bg4");
   height: $swBtnDim;
@@ -18,6 +19,25 @@ $swBtnMargin: 0.15em;
     top: 0px;
     left: 0px;
     transition: left 0.2s;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    &.active {
+      background-color: color-mix(
+        in srgb,
+        color("bg4") 60%,
+        rgb(128, 128, 128)
+      );
+    }
+
+    .switch-knob {
+      background-color: color-mix(
+        in srgb,
+        color("bg2") 50%,
+        rgb(217, 217, 217)
+      );
+    }
   }
 
   &.active {

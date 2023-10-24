@@ -66,13 +66,14 @@ When a button is togglable (similarly to a checkbox), `toggled` class can be use
 
 # Class Names
 
-- `btn` - any button element
 - `adaptive` - changes the background color of regular button to a semi-transparent color that better adapts to different background colors
-- `primary` - a button with the accent color as it's background
+- `btn-wrapper` - a container element for the button that enables linking element via the `linked` class name when the button is inside some container rather than being the direct descendant of the `linked` element
+- `btn` - any button element
+- `circular` - a button in a shape of a circle with a fixed width and height
 - `danger` - a button with the danger color as it's background
+- `disabled` - changed the inner text color to grey and for colored buttons alters the background color
 - `flat` - a button with no background color when not hovered over or pressed
 - `pill` - a button with a very high border radius
-- `circular` - a button in a shape of a circle with a fixed width and height
+- `primary` - a button with the accent color as it's background
 - `square` - a button in a shape of a square with a fixed width and height
 - `toggled` - a button that's currently toggled on
-- `btn-wrapper` - a container element for the button that enables linking element via the `linked` class name when the button is inside some container rather than being the direct descendant of the `linked` element

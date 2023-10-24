@@ -32,6 +32,6 @@ When an element is `activable`, hovering over it will change it's background col
 
 # Class Names
 
-- `list` - a container that houses the list elements, changes the background color and adds border radius
-- `list-element` - a class that should be added to all of the list elements
 - `activable` - a class that should be added to the list element if it should change it's background color when hovered over
+- `list-element` - a class that should be added to all of the list elements
+- `list` - a container that houses the list elements, changes the background color and adds border radius

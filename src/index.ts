@@ -28,6 +28,10 @@ export class Button {
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/button.md#ClassNames
    */
+  static readonly disabled = "disabled";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/button.md#ClassNames
+   */
   static readonly primary = "primary";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/button.md#ClassNames
@@ -85,6 +89,10 @@ export class Checkbox {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/checkbox.md#ClassNames
    */
   static readonly checkbox = "checkbox";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/checkbox.md#ClassNames
+   */
+  static readonly disabled = "disabled";
 }
 
 /**
@@ -105,6 +113,10 @@ export class Input {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/input.md#ClassNames
    */
   static readonly input = "input";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/input.md#ClassNames
+   */
+  static readonly disabled = "disabled";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/input.md#ClassNames
    */
@@ -188,6 +200,10 @@ export class Slider {
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/slider.md#ClassNames
    */
+  static readonly disabled = "disabled";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/slider.md#ClassNames
+   */
   static readonly track = "slider-track";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/slider.md#ClassNames
@@ -211,6 +227,10 @@ export class Switch {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/switch.md#ClassNames
    */
   static readonly switch = "switch";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/switch.md#ClassNames
+   */
+  static readonly disabled = "disabled";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/switch.md#ClassNames
    */
@@ -273,6 +293,10 @@ export class Selector {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
    */
   static readonly selector = "selector";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly disabled = "disabled";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
    */

@@ -24,7 +24,7 @@ To create sections of the sidebar a [separator](./separator.md) can be used.
 
 # Class Names
 
-- `nav-sidebar` - a container for the navigation buttons
-- `nav-sidebar-btn` - a navigation button
 - `active` - a class that should be added to the navigation button when it is active, changes the background color of that button
+- `nav-sidebar-btn` - a navigation button
+- `nav-sidebar` - a container for the navigation buttons
 - `separator` - creates a horizontal line that separates different sections of the sidebar

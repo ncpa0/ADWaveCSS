@@ -20,8 +20,9 @@ Here's how it could be constructed:
 
 # Class Names
 
-- `slider` - a container for the slider elements
-- `slider-track` - a track that spans the entire width of the slider
+- `disabled` - changes the background color of the slider progress bar
+- `no-position` - when added to the slider container, the position styling doesn't get applied to the internal elements
 - `slider-progress` - a progress bar that spans the slider up to the thumb
 - `slider-thumb` - a container for the thumb element, that is the knob that can be dragged to change the value of the slider
-- `no-position` - when added to the slider container, the position styling doesn't get applied to the internal elements
+- `slider-track` - a track that spans the entire width of the slider
+- `slider` - a container for the slider elements

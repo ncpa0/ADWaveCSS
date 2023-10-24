@@ -1,4 +1,5 @@
 .input {
+  color: color("text");
   background-color: color("btn");
   border-radius: size("bradius");
   outline: 1px solid color("btn");
@@ -7,7 +8,21 @@
   font-family: "Ubuntu", sans-serif;
   border: none;
 
-  &.input.input:focus-visible {
+  &::placeholder {
+    color: nativeDarken(color("text"), 15%);
+  }
+
+  &.input.input:focus-visible:not(.disabled) {
     outline: 1px solid color("primary-300");
+  }
+
+  &.disabled {
+    color: nativeDarken(color("text"), 25%);
+    cursor: not-allowed;
+    caret-color: transparent;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
   }
 }

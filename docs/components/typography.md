@@ -42,7 +42,7 @@ Header is much bigger than regular text and is bolder.
 
 # Class Names
 
-- `text` - regular text
-- `subtitle` - subtitle text
-- `label` - label text
 - `header` - header text
+- `label` - label text
+- `subtitle` - subtitle text
+- `text` - regular text

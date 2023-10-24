@@ -9,3 +9,4 @@
 # Class Names
 
 - `checkbox` - a checkbox element
+- `disabled` - changes the background color of the checkbox

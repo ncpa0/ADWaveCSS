@@ -20,7 +20,15 @@ $elementHeight: 1.8em;
     border: 1px solid color("primary-300");
   }
 
+  &.disabled {
+    cursor: not-allowed;
+    .selected-option {
+      color: nativeOpacity(color("text"), 60%);
+    }
+  }
+
   .selected-option {
+    color: color("text");
     border-bottom-left-radius: size("bradius");
     border-top-left-radius: size("bradius");
     padding: 0.3em 0.9em;
@@ -46,12 +54,12 @@ $elementHeight: 1.8em;
     }
   }
 
-  &:hover,
+  &:hover:not(.disabled),
   &.opened {
     background-color: color("btn-hover");
   }
 
-  &:not(.opened):active {
+  &:not(.opened, .disabled):active {
     background-color: color("btn-pressed");
   }
 
