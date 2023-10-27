@@ -1,7 +1,6 @@
 .nav-sidebar {
   display: flex;
   flex-direction: column;
-  background-color: color("bg1");
   padding: 0.25em;
 
   .nav-sidebar-btn {
@@ -10,21 +9,21 @@
     border: unset;
     margin: 1px 0px;
     border-radius: size("bradius");
-    padding: 0.7em;
+    padding: 0.5em 0.7em;
     background-color: transparent;
     transition: background-color 0.1s;
     font-family: "Ubuntu", sans-serif;
 
     &.active {
-      background-color: color("bg3");
+      background-color: rgba(128, 128, 128, 0.3);
     }
 
     &:hover {
-      background-color: color("bg2");
+      background-color: rgba(128, 128, 128, 0.25);
     }
 
     &:active {
-      background-color: color("bg4");
+      background-color: rgba(128, 128, 128, 0.4);
     }
 
     &:focus-visible {

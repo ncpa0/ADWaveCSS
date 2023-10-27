@@ -5,7 +5,7 @@
 Navigation sidebar is a container for a list of navigation buttons. It is intended to be used vertically only.
 
 ```html
-<div class="nav-sidebar">
+<div class="box nav-sidebar">
   <button class="nav-sidebar-btn">
     <span>Home Page</span>
   </button>
