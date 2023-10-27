@@ -1,4 +1,5 @@
 .nav-sidebar {
+  @include scrollbar;
   display: flex;
   flex-direction: column;
   padding: 0.25em;
