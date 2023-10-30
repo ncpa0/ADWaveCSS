@@ -14,7 +14,19 @@ export class Box {
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
    */
-  static readonly light = "light";
+  static readonly rounded = "rounded";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
+   */
+  static readonly bg2 = "bg-level-2";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
+   */
+  static readonly bg3 = "bg-level-3";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
+   */
+  static readonly bg4 = "bg-level-4";
 }
 
 /**
@@ -24,7 +36,7 @@ export class Button {
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/button.md#ClassNames
    */
-  static readonly button = "button";
+  static readonly button = "btn";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/button.md#ClassNames
    */
@@ -65,6 +77,14 @@ export class Button {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/button.md#ClassNames
    */
   static readonly adaptive = "adaptive";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/linked.md
+   */
+  static readonly linked = "linked";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/linked.md
+   */
+  static readonly linkedVertical = "vertical";
 }
 
 /**
@@ -118,11 +138,11 @@ export class Input {
    */
   static readonly disabled = "disabled";
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/input.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/linked.md
    */
   static readonly linked = "linked";
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/input.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/linked.md
    */
   static readonly linkedVertical = "vertical";
   /**
@@ -187,6 +207,7 @@ export class NavSidebar {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/nav-sidebar.md#ClassNames
    */
   static readonly separator = "separator";
+  static readonly active = "active";
 }
 
 /**
