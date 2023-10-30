@@ -4,6 +4,8 @@ $noPositionClassName: ".no-position";
   flex: 1;
   min-height: 1em;
   border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
 
   &.disabled {
     cursor: not-allowed;

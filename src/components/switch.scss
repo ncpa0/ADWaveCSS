@@ -3,6 +3,7 @@ $swBtnMargin: 0.15em;
 
 .switch {
   cursor: pointer;
+  user-select: none;
   border-radius: 18px;
   background-color: color("bg4");
   height: $swBtnDim;
