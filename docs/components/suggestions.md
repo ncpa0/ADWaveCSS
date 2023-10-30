@@ -27,4 +27,3 @@ Depending on whether the suggestions will be displayed above or below the input,
 - `active` - currently highlighted suggestion option
 - `suggestions-option` - a suggestion option element
 - `suggestions` - a container element for the suggestions
-- `top` - a class that should be added to the suggestions container if the list should be positioned upwards, instead of downwards as it is by default

@@ -1,19 +1,10 @@
 .suggestions {
   @include scrollbar;
   background-color: color("btn");
-
-  &.top {
-    border-top-left-radius: size("bradius");
-    border-top-right-radius: size("bradius");
-  }
-
-  &:not(.top) {
-    border-bottom-left-radius: size("bradius");
-    border-bottom-right-radius: size("bradius");
-  }
+  border-radius: size("bradius");
 
   .suggestions-option {
-    background-color: color("bg2");
+    background-color: color("bg3");
     background-clip: padding-box;
     transition: background-color 0.1s;
     padding: 0.5em;

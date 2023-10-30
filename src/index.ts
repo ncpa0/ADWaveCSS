@@ -279,10 +279,6 @@ export class Suggestions {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
    */
   static readonly active = "active";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
-   */
-  static readonly top = "top";
 }
 
 /**
