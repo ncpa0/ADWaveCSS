@@ -9,7 +9,7 @@
   border: none;
 
   &::placeholder {
-    color: nativeDarken(color("text"), 15%);
+    color: nativeDarken(color("text"), 35%);
   }
 
   &.input.input:focus-visible:not(.disabled) {
