@@ -106,6 +106,7 @@ $elementHeight: 1.8em;
       cursor: pointer;
       display: flex;
       justify-content: flex-start;
+      user-select: none;
 
       &:hover {
         background-color: color("bg4");
