@@ -52,6 +52,8 @@ $colorNames: (
   danger-700: --clr-danger-700,
   danger-800: --clr-danger-800,
   danger-900: --clr-danger-900,
+  list-elem: --clr-list-elem,
+  list-elem-hover: --clr-list-elem-hover,
 );
 
 @function nativeLighten($color, $amount) {
@@ -114,6 +116,7 @@ $darker-4: 30%;
   $btnColor: #414141;
   $btnAdaptiveColor: rgb(96 96 96 / 55%);
   $focusColor: #546f8e;
+  $listElem: rgba(75, 75, 75, 0.4);
 
   $textColor: #eeeeec;
   $textSecondaryColor: #a0a0a0;
@@ -181,6 +184,8 @@ $darker-4: 30%;
   #{colorName("danger-700")}: nativeLighten($dangerColor, $lighter-3);
   #{colorName("danger-800")}: nativeLighten($dangerColor, $lighter-4);
   #{colorName("danger-900")}: nativeLighten($dangerColor, $lighter-5);
+  #{colorName("list-elem")}: $listElem;
+  #{colorName("list-elem-hover")}: lighten($listElem, 7.5%);
 
   & * {
     color: color("text");
@@ -197,6 +202,7 @@ $darker-4: 30%;
   $btnColor: #d9d9d9;
   $btnAdaptiveColor: rgb(133 133 133 / 26%);
   $focusColor: #8db8ec;
+  $listElem: rgba(190, 190, 190, 0.25);
 
   $textColor: rgba(0, 0, 0, 0.8);
   $textSecondaryColor: #686868;
@@ -264,6 +270,8 @@ $darker-4: 30%;
   #{colorName("danger-700")}: nativeLighten($dangerColor, $lighter-3);
   #{colorName("danger-800")}: nativeLighten($dangerColor, $lighter-4);
   #{colorName("danger-900")}: nativeLighten($dangerColor, $lighter-5);
+  #{colorName("list-elem")}: $listElem;
+  #{colorName("list-elem-hover")}: darken($listElem, 15%);
 
   & * {
     color: color("text");
