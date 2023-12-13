@@ -1,7 +1,7 @@
 {
   "name": "adwavecss",
   "displayName": "ADWave CSS",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Adwaita/GTK inspired CSS for the web.",
   "keywords": [
     "css",
