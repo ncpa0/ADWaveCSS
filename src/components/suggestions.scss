@@ -4,13 +4,13 @@
   border-radius: size("bradius");
 
   .suggestions-option {
-    background-color: color("bg3");
+    background-color: color("btn");
     background-clip: padding-box;
     transition: background-color 0.1s;
     padding: 0.5em;
 
     &.active {
-      background-color: color("bg4");
+      background-color: color("btn-hover");
     }
   }
 }

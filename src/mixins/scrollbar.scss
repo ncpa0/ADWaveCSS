@@ -2,12 +2,12 @@
   &::-webkit-scrollbar {
     background-color: transparent;
     width: 8px;
+    height: 8px;
     border-radius: size("bradius");
   }
 
   &::-webkit-scrollbar-track {
-    margin-bottom: 6px;
-    margin-top: 6px;
+    margin: 6px;
     border-radius: size("bradius");
   }
 

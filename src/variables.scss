@@ -112,7 +112,7 @@ $darker-4: 30%;
   $bgColor3: #303030;
   $bgColor4: #424242;
   $bgColor5: #505050;
-  $dimmedColor: lighten($bgColor2, 5%);
+  $dimmedColor: lighten($bgColor2, 15%);
   $btnColor: #414141;
   $btnAdaptiveColor: rgb(96 96 96 / 55%);
   $focusColor: #546f8e;
@@ -194,12 +194,12 @@ $darker-4: 30%;
 
 .light-theme {
   $bgColor1: #e5e5e5;
-  $bgColor2: #dbdbdb;
-  $bgColor3: #d5d5d5;
+  $bgColor2: #dcdcdc;
+  $bgColor3: #d4d4d4;
   $bgColor4: #c8c8c8;
   $bgColor5: #bdbdbd;
-  $dimmedColor: darken($bgColor2, 5%);
-  $btnColor: #d0d0d0;
+  $dimmedColor: darken($bgColor2, 17%);
+  $btnColor: #cbcbcb;
   $btnAdaptiveColor: rgb(133 133 133 / 26%);
   $focusColor: #8db8ec;
   $listElem: rgba(190, 190, 190, 0.25);

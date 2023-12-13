@@ -66,7 +66,7 @@ $elementHeight: 1.8em;
   .options-list {
     @include scrollbar;
     border-radius: size("bradius");
-    background-color: color("bg3");
+    background-color: color("btn");
     padding: 0.4em;
     display: flex;
     flex-direction: column;
@@ -109,7 +109,7 @@ $elementHeight: 1.8em;
       user-select: none;
 
       &:hover {
-        background-color: color("bg4");
+        background-color: color("btn-hover");
       }
 
       &:active {

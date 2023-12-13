@@ -8,8 +8,10 @@
   font-family: "Ubuntu", sans-serif;
   border: none;
 
+  $placeholderColor: color-mix(in srgb, color("text") 40%, rgb(128, 128, 128));
+
   &::placeholder {
-    color: nativeDarken(color("text"), 35%);
+    color: $placeholderColor;
   }
 
   &.input.input:focus-visible:not(.disabled) {
@@ -17,7 +19,7 @@
   }
 
   &.disabled {
-    color: nativeDarken(color("text"), 25%);
+    color: nativeOpacity($placeholderColor, 70%);
     cursor: not-allowed;
     caret-color: transparent;
 
