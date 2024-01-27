@@ -4,8 +4,9 @@
   padding: 0.85em 1.15em;
 
   &.activable {
+    @include bg-transition();
     &:hover {
-      background-color: nativeLighten(color("bg2"), 5%);
+      background-color: color-mix(in srgb, color("bg2") 82%, rgb(128, 128, 128));
     }
   }
 }

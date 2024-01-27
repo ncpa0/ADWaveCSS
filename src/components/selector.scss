@@ -2,6 +2,7 @@ $noPositionClassName: ".no-position";
 $elementHeight: 1.8em;
 
 .selector {
+  @include bg-transition();
   background-color: color("btn");
   border-radius: size("bradius");
   border: 1px solid color("btn");
@@ -98,6 +99,7 @@ $elementHeight: 1.8em;
     }
 
     .option {
+      @include bg-transition(0.1s);
       background-color: transparent;
       border-radius: size("bradius");
       border: unset;

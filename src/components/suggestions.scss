@@ -4,9 +4,9 @@
   border-radius: size("bradius");
 
   .suggestions-option {
+    @include bg-transition(0.1s);
     background-color: color("btn");
     background-clip: padding-box;
-    transition: background-color 0.1s;
     padding: 0.5em;
 
     &.active {

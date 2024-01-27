@@ -1,4 +1,5 @@
 .btn {
+  @include bg-transition();
   cursor: pointer;
   background-color: color("btn");
   border-radius: size("bradius");
@@ -7,7 +8,6 @@
   outline: unset;
   outline-offset: -4px;
   padding: 0.5em 0.5em;
-  transition: background-color 0.2s;
 
   &.adaptive {
     background-color: color("btn-adaptive");

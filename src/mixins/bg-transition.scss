@@ -1,0 +1,5 @@
+@mixin bg-transition($t: 0.2s, $easing: ease-in-out) {
+    transition:
+        background $t $easing,
+        background-color $t $easing;
+}

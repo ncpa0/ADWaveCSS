@@ -53,7 +53,7 @@ $colorNames: (
   danger-800: --clr-danger-800,
   danger-900: --clr-danger-900,
   list-elem: --clr-list-elem,
-  list-elem-hover: --clr-list-elem-hover,
+  list-elem-hover: --clr-list-elem-hover
 );
 
 @function nativeLighten($color, $amount) {
@@ -80,7 +80,7 @@ $colorNames: (
 }
 
 $sizes: (
-  bradius: --border-radius,
+  bradius: --border-radius
 );
 
 @function sizeName($name) {
@@ -193,13 +193,99 @@ $darker-4: 30%;
 }
 
 .light-theme {
-  $bgColor1: #e5e5e5;
-  $bgColor2: #dcdcdc;
-  $bgColor3: #d4d4d4;
-  $bgColor4: #c8c8c8;
-  $bgColor5: #bdbdbd;
+  $bgColor1: hsl(0deg 0% 93% / 1);
+  $bgColor2: hsl(0deg 0% 98% / 1);
+  $bgColor3: hsl(0deg 0% 88% / 1);
+  $bgColor4: hsl(0deg 0% 83% / 1);
+  $bgColor5: hsl(0deg 0% 78% / 1);
+  $dimmedColor: darken($bgColor2, 15%);
+  $btnColor: hsl(0deg 0% 88% / 1);
+  $btnAdaptiveColor: rgb(133 133 133 / 26%);
+  $focusColor: #8db8ec;
+  $listElem: rgba(190, 190, 190, 0.25);
+
+  $textColor: rgba(0, 0, 0, 0.8);
+  $textSecondaryColor: #686868;
+
+  $successText: #ffffff;
+  $successFg: #1b8553;
+  $successBg: #2ec27e;
+  $alertText: rgba(0, 0, 0, 0.8);
+  $alertFg: #9c6e03;
+  $alertBg: #e5a50a;
+  $errorText: #ffffff;
+  $errorFg: #c01c28;
+  $errorBg: #e01b24;
+
+  $accentColor: var(--adw-accent, #3584e4);
+  $accentText: var(--adw-accent-text, #ffffff);
+  $dangerColor: var(--adw-danger, #e01b24);
+  $dangerText: var(--adw-danger-text, rgba(0, 0, 0, 0.8));
+
+  #{colorName("bg1")}: $bgColor1;
+  #{colorName("bg2")}: $bgColor2;
+  #{colorName("bg3")}: $bgColor3;
+  #{colorName("bg4")}: $bgColor4;
+  #{colorName("bg5")}: $bgColor5;
+  #{colorName("text")}: $textColor;
+  #{colorName("text-secondary")}: $textSecondaryColor;
+  #{colorName("success-text")}: $successText;
+  #{colorName("success-fg")}: $successFg;
+  #{colorName("success-bg")}: $successBg;
+  #{colorName("alert-text")}: $alertText;
+  #{colorName("alert-fg")}: $alertFg;
+  #{colorName("alert-bg")}: $alertBg;
+  #{colorName("error-text")}: $errorText;
+  #{colorName("error-fg")}: $errorFg;
+  #{colorName("error-bg")}: $errorBg;
+  #{colorName("dimmed")}: $dimmedColor;
+  #{colorName("btn")}: $btnColor;
+  #{colorName("btn-toggled")}: darken($btnColor, 15%);
+  #{colorName("btn-hover")}: darken($btnColor, 5%);
+  #{colorName("btn-pressed")}: darken($btnColor, 13%);
+  #{colorName("btn-adaptive")}: $btnAdaptiveColor;
+  #{colorName("btn-adaptive-toggled")}: darken($btnAdaptiveColor, 50%);
+  #{colorName("btn-adaptive-hover")}: darken($btnAdaptiveColor, 20%);
+  #{colorName("btn-adaptive-pressed")}: darken($btnAdaptiveColor, 40%);
+  #{colorName("focus")}: $focusColor;
+  #{colorName("primary-text")}: $accentText;
+  #{colorName("primary-000")}: nativeDarken($accentColor, $darker-4);
+  #{colorName("primary-100")}: nativeDarken($accentColor, $darker-3);
+  #{colorName("primary-200")}: nativeDarken($accentColor, $darker-2);
+  #{colorName("primary-300")}: nativeDarken($accentColor, $darker-1);
+  #{colorName("primary-400")}: $accentColor;
+  #{colorName("primary-500")}: nativeLighten($accentColor, $lighter-1);
+  #{colorName("primary-600")}: nativeLighten($accentColor, $lighter-2);
+  #{colorName("primary-700")}: nativeLighten($accentColor, $lighter-3);
+  #{colorName("primary-800")}: nativeLighten($accentColor, $lighter-4);
+  #{colorName("primary-900")}: nativeLighten($accentColor, $lighter-5);
+  #{colorName("danger-text")}: $dangerText;
+  #{colorName("danger-000")}: nativeDarken($dangerColor, $darker-4);
+  #{colorName("danger-100")}: nativeDarken($dangerColor, $darker-3);
+  #{colorName("danger-200")}: nativeDarken($dangerColor, $darker-2);
+  #{colorName("danger-300")}: nativeDarken($dangerColor, $darker-1);
+  #{colorName("danger-400")}: $dangerColor;
+  #{colorName("danger-500")}: nativeLighten($dangerColor, $lighter-1);
+  #{colorName("danger-600")}: nativeLighten($dangerColor, $lighter-2);
+  #{colorName("danger-700")}: nativeLighten($dangerColor, $lighter-3);
+  #{colorName("danger-800")}: nativeLighten($dangerColor, $lighter-4);
+  #{colorName("danger-900")}: nativeLighten($dangerColor, $lighter-5);
+  #{colorName("list-elem")}: $listElem;
+  #{colorName("list-elem-hover")}: darken($listElem, 15%);
+
+  & * {
+    color: color("text");
+  }
+}
+
+.light-theme-2 {
+  $bgColor1: hsl(0deg 0% 98% / 1);
+  $bgColor2: hsl(0deg 0% 93% / 1);
+  $bgColor3: hsl(0deg 0% 88% / 1);
+  $bgColor4: hsl(0deg 0% 83% / 1);
+  $bgColor5: hsl(0deg 0% 78% / 1);
   $dimmedColor: darken($bgColor2, 17%);
-  $btnColor: #cbcbcb;
+  $btnColor: hsl(0deg 0% 85% / 1);
   $btnAdaptiveColor: rgb(133 133 133 / 26%);
   $focusColor: #8db8ec;
   $listElem: rgba(190, 190, 190, 0.25);

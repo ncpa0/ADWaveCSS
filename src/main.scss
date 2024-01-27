@@ -2,6 +2,7 @@
 
 @import "variables";
 @import "mixins/scrollbar";
+@import "mixins/bg-transition";
 @import "components/box";
 @import "components/button";
 @import "components/card";
@@ -18,3 +19,4 @@
 @import "components/typography";
 @import "components/suggestions";
 @import "components/selector";
+@import "components/scrollview";

@@ -1,6 +1,7 @@
 export class Theme {
   static readonly dark = "dark-theme";
   static readonly light = "light-theme";
+  static readonly light2 = "light-theme-2";
 }
 
 /**
@@ -210,6 +211,57 @@ export class NavSidebar {
   static readonly active = "active";
 }
 
+export class ScrollView {
+  static readonly scrollView = "scrollview";
+}
+
+/**
+ * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md
+ */
+export class Selector {
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly selector = "selector";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly disabled = "disabled";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly selectedOption = "selected-option";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly downButton = "down-button";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly opened = "opened";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly optionsList = "options-list";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly option = "option";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly top = "top";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
+   */
+  static readonly noPosition = "no-position";
+}
+
+export class Separator {
+  static readonly separator = "separator";
+  static readonly vertical = "vertical";
+}
+
 /**
  * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/slider.md
  */
@@ -238,6 +290,24 @@ export class Slider {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/slider.md#ClassNames
    */
   static readonly noPosition = "no-position";
+}
+
+/**
+ * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md
+ */
+export class Suggestions {
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
+   */
+  static readonly suggestions = "suggestions";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
+   */
+  static readonly option = "suggestions-option";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
+   */
+  static readonly active = "active";
 }
 
 /**
@@ -284,67 +354,6 @@ export class Typography {
   static readonly header = "header";
 }
 
-/**
- * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md
- */
-export class Suggestions {
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
-   */
-  static readonly suggestions = "suggestions";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
-   */
-  static readonly option = "suggestions-option";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
-   */
-  static readonly active = "active";
-}
-
-/**
- * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md
- */
-export class Selector {
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly selector = "selector";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly disabled = "disabled";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly selectedOption = "selected-option";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly downButton = "down-button";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly opened = "opened";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly optionsList = "options-list";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly option = "option";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly top = "top";
-  /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
-   */
-  static readonly noPosition = "no-position";
-}
-
-Object.freeze(Theme);
 Object.freeze(Box);
 Object.freeze(Button);
 Object.freeze(Card);
@@ -354,14 +363,15 @@ Object.freeze(Input);
 Object.freeze(List);
 Object.freeze(Message);
 Object.freeze(NavSidebar);
-Object.freeze(Slider);
-Object.freeze(Switch);
-Object.freeze(Typography);
-Object.freeze(Suggestions);
+Object.freeze(ScrollView);
 Object.freeze(Selector);
+Object.freeze(Slider);
+Object.freeze(Suggestions);
+Object.freeze(Switch);
+Object.freeze(Theme);
+Object.freeze(Typography);
 
 export default {
-  Theme,
   Box,
   Button,
   Card,
@@ -371,9 +381,11 @@ export default {
   List,
   Message,
   NavSidebar,
-  Slider,
-  Switch,
-  Typography,
-  Suggestions,
+  ScrollView,
   Selector,
+  Slider,
+  Suggestions,
+  Switch,
+  Theme,
+  Typography,
 } as const;

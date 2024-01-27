@@ -5,6 +5,7 @@
   padding: 0.25em;
 
   .nav-sidebar-btn {
+    @include bg-transition(0.1s);
     display: flex;
     font-size: inherit;
     border: unset;
@@ -12,7 +13,6 @@
     border-radius: size("bradius");
     padding: 0.5em 0.7em;
     background-color: transparent;
-    transition: background-color 0.1s;
     font-family: "Ubuntu", sans-serif;
 
     &.active {

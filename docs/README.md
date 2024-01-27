@@ -23,7 +23,7 @@
 
 A theme must be provided to a container that houses all of the elements.
 
-Two themes are available via classes: `light-theme` and `dark-theme`.
+Three themes are available: `dark-theme`, `light-theme` and `light-theme-2`.
 
 ### Example
 
