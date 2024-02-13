@@ -262,6 +262,10 @@ export class Separator {
   static readonly vertical = "vertical";
 }
 
+export class Skeleton {
+  static readonly skeleton = "skeleton";
+}
+
 /**
  * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/slider.md
  */
@@ -365,6 +369,8 @@ Object.freeze(Message);
 Object.freeze(NavSidebar);
 Object.freeze(ScrollView);
 Object.freeze(Selector);
+Object.freeze(Separator);
+Object.freeze(Skeleton);
 Object.freeze(Slider);
 Object.freeze(Suggestions);
 Object.freeze(Switch);
@@ -383,6 +389,8 @@ export default {
   NavSidebar,
   ScrollView,
   Selector,
+  Separator,
+  Skeleton,
   Slider,
   Suggestions,
   Switch,
