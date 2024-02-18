@@ -2,6 +2,16 @@ export class Theme {
   static readonly dark = "dark-theme";
   static readonly light = "light-theme";
   static readonly light2 = "light-theme-2";
+
+  static className(params: { type?: "dark" | "light" | "light2" }) {
+    switch (params.type) {
+      case "light":
+        return Theme.light;
+      case "light2":
+        return Theme.light2;
+    }
+    return Theme.dark;
+  }
 }
 
 /**
@@ -28,6 +38,27 @@ export class Box {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
    */
   static readonly bg4 = "bg-level-4";
+
+  static className(params: { rounded?: boolean; bg?: 1 | 2 | 3 | 4 }) {
+    let className = Box.box;
+    if (params.rounded) {
+      className += ` ${Box.rounded}`;
+    }
+    if (params.bg) {
+      switch (params.bg) {
+        case 4:
+          className += ` ${Box.bg4}`;
+          break;
+        case 3:
+          className += ` ${Box.bg3}`;
+          break;
+        case 2:
+          className += ` ${Box.bg2}`;
+          break;
+      }
+    }
+    return className;
+  }
 }
 
 /**
@@ -86,6 +117,62 @@ export class Button {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/linked.md
    */
   static readonly linkedVertical = "vertical";
+
+  static className(params: {
+    disabled?: boolean;
+    color?: "primary" | "danger";
+    shape?: "circular" | "square";
+    flat?: boolean;
+    pill?: boolean;
+    toggled?: boolean;
+    adaptive?: boolean;
+    linked?: boolean;
+    linkedVertical?: boolean;
+  }) {
+    let className = Button.button;
+    if (params.disabled) {
+      className += ` ${Button.disabled}`;
+    }
+    if (params.color) {
+      switch (params.color) {
+        case "primary":
+          className += ` ${Button.primary}`;
+          break;
+        case "danger":
+          className += ` ${Button.danger}`;
+          break;
+      }
+    }
+    if (params.shape) {
+      switch (params.shape) {
+        case "circular":
+          className += ` ${Button.circular}`;
+          break;
+        case "square":
+          className += ` ${Button.square}`;
+          break;
+      }
+    }
+    if (params.flat) {
+      className += ` ${Button.flat}`;
+    }
+    if (params.pill) {
+      className += ` ${Button.pill}`;
+    }
+    if (params.toggled) {
+      className += ` ${Button.toggled}`;
+    }
+    if (params.adaptive) {
+      className += ` ${Button.adaptive}`;
+    }
+    if (params.linked) {
+      className += ` ${Button.linked}`;
+    }
+    if (params.linkedVertical) {
+      className += ` ${Button.linkedVertical}`;
+    }
+    return className;
+  }
 }
 
 /**
@@ -100,6 +187,14 @@ export class Card {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/card.md#ClassNames
    */
   static readonly activable = "activable";
+
+  static className(params: { activable?: boolean }) {
+    let className = Card.card;
+    if (params.activable) {
+      className += ` ${Card.activable}`;
+    }
+    return className;
+  }
 }
 
 /**
@@ -114,6 +209,14 @@ export class Checkbox {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/checkbox.md#ClassNames
    */
   static readonly disabled = "disabled";
+
+  static className(params: { disabled?: boolean }) {
+    let className = Checkbox.checkbox;
+    if (params.disabled) {
+      className += ` ${Checkbox.disabled}`;
+    }
+    return className;
+  }
 }
 
 /**
@@ -124,6 +227,10 @@ export class Frame {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/frame.md#ClassNames
    */
   static readonly frame = "frame";
+
+  static className() {
+    return Frame.frame;
+  }
 }
 
 /**
@@ -150,6 +257,28 @@ export class Input {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/input.md#ClassNames
    */
   static readonly wrapper = "input-wrapper";
+
+  static className(params: {
+    disabled?: boolean;
+    linked?: boolean;
+    linkedVertical?: boolean;
+  }) {
+    let className = Input.input;
+    if (params.disabled) {
+      className += ` ${Input.disabled}`;
+    }
+    if (params.linked) {
+      className += ` ${Input.linked}`;
+    }
+    if (params.linkedVertical) {
+      className += ` ${Input.linkedVertical}`;
+    }
+    return className;
+  }
+
+  static wrapperClassName() {
+    return Input.wrapper;
+  }
 }
 
 /**
@@ -168,6 +297,19 @@ export class List {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/list.md#ClassNames
    */
   static readonly activableElement = "activable";
+
+  static className() {
+    let className = List.list;
+    return className;
+  }
+
+  static elementClassName(params: { activable?: boolean }) {
+    let className = List.element;
+    if (params.activable) {
+      className += ` ${List.activableElement}`;
+    }
+    return className;
+  }
 }
 
 /**
@@ -190,6 +332,24 @@ export class Message {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/message.md#ClassNames
    */
   static readonly error = "error";
+
+  static className(params: { type?: "success" | "alert" | "error" }) {
+    let className = Message.message;
+    if (params.type) {
+      switch (params.type) {
+        case "success":
+          className += ` ${Message.success}`;
+          break;
+        case "alert":
+          className += ` ${Message.alert}`;
+          break;
+        case "error":
+          className += ` ${Message.error}`;
+          break;
+      }
+    }
+    return className;
+  }
 }
 
 /**
@@ -209,10 +369,30 @@ export class NavSidebar {
    */
   static readonly separator = "separator";
   static readonly active = "active";
+
+  static className() {
+    return NavSidebar.navSidebar;
+  }
+
+  static btnClassName(params: { active?: boolean }) {
+    let className = NavSidebar.button;
+    if (params.active) {
+      className += ` ${NavSidebar.active}`;
+    }
+    return className;
+  }
+
+  static separatorClassName() {
+    return NavSidebar.separator;
+  }
 }
 
 export class ScrollView {
   static readonly scrollView = "scrollview";
+
+  static className() {
+    return ScrollView.scrollView;
+  }
 }
 
 /**
@@ -255,15 +435,69 @@ export class Selector {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/selector.md#ClassNames
    */
   static readonly noPosition = "no-position";
+
+  static className(params: {
+    disabled?: boolean;
+    opened?: boolean;
+    noPosition?: boolean;
+    position?: "top" | "bottom";
+  }) {
+    let className = Selector.selector;
+    if (params.disabled) {
+      className += ` ${Selector.disabled}`;
+    }
+    if (params.opened) {
+      className += ` ${Selector.opened}`;
+    }
+    if (params.noPosition) {
+      className += ` ${Selector.noPosition}`;
+    }
+    if (params.position === "top") {
+      className += ` ${Selector.top}`;
+    }
+    return className;
+  }
+
+  static optionClassName() {
+    let className = Selector.option;
+    return className;
+  }
+
+  static selectedOptionClassName() {
+    let className = Selector.selectedOption;
+    return className;
+  }
+
+  static listClassName() {
+    let className = Selector.optionsList;
+    return className;
+  }
+
+  static downButtonClassName() {
+    let className = Selector.downButton;
+    return className;
+  }
 }
 
 export class Separator {
   static readonly separator = "separator";
   static readonly vertical = "vertical";
+
+  static className(params: { vertical?: boolean }) {
+    let className = Separator.separator;
+    if (params.vertical) {
+      className += ` ${Separator.vertical}`;
+    }
+    return className;
+  }
 }
 
 export class Skeleton {
   static readonly skeleton = "skeleton";
+
+  static className() {
+    return Skeleton.skeleton;
+  }
 }
 
 /**
@@ -294,6 +528,32 @@ export class Slider {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/slider.md#ClassNames
    */
   static readonly noPosition = "no-position";
+
+  static className(params: { disabled?: boolean; noPosition?: boolean }) {
+    let className = Slider.slider;
+    if (params.disabled) {
+      className += ` ${Slider.disabled}`;
+    }
+    if (params.noPosition) {
+      className += ` ${Slider.noPosition}`;
+    }
+    return className;
+  }
+
+  static trackClassName() {
+    let className = Slider.track;
+    return className;
+  }
+
+  static progressClassName() {
+    let className = Slider.progress;
+    return className;
+  }
+
+  static thumbClassName() {
+    let className = Slider.thumb;
+    return className;
+  }
 }
 
 /**
@@ -312,6 +572,19 @@ export class Suggestions {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/suggestions.md#ClassNames
    */
   static readonly active = "active";
+
+  static className() {
+    let className = Suggestions.suggestions;
+    return className;
+  }
+
+  static optionClassName(params: { active?: boolean }) {
+    let className = Suggestions.option;
+    if (params.active) {
+      className += ` ${Suggestions.active}`;
+    }
+    return className;
+  }
 }
 
 /**
@@ -334,6 +607,17 @@ export class Switch {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/switch.md#ClassNames
    */
   static readonly active = "active";
+
+  static className(params: { disabled?: boolean; active?: boolean }) {
+    let className = Switch.switch;
+    if (params.disabled) {
+      className += ` ${Switch.disabled}`;
+    }
+    if (params.active) {
+      className += ` ${Switch.active}`;
+    }
+    return className;
+  }
 }
 
 /**
@@ -356,6 +640,18 @@ export class Typography {
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
    */
   static readonly header = "header";
+
+  static className(params: { type?: "subtitle" | "label" | "header" }) {
+    switch (params.type) {
+      case "subtitle":
+        return Typography.subtitle;
+      case "label":
+        return Typography.label;
+      case "header":
+        return Typography.header;
+    }
+    return Typography.text;
+  }
 }
 
 Object.freeze(Box);
