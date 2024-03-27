@@ -36,6 +36,8 @@ $elementHeight: 1.8em;
     font-family: "Ubuntu", sans-serif;
     user-select: none;
     flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .down-button {
