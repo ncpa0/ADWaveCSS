@@ -16,12 +16,12 @@ Success message has a green font color.
 <p class="message success">Success!</p>
 ```
 
-## Alert Message
+## Warning Message
 
 Alert message has a yellow font color.
 
 ```html
-<p class="message alert">Success!</p>
+<p class="message warning">Warning!</p>
 ```
 
 ## Error Message
@@ -29,7 +29,7 @@ Alert message has a yellow font color.
 Error message has a red font color.
 
 ```html
-<p class="message error">Success!</p>
+<p class="message error">Error!</p>
 ```
 
 # Class Names
