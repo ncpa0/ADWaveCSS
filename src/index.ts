@@ -676,6 +676,67 @@ export class Alert {
   }
 }
 
+/**
+ * All CSS variables with colors provided by the Adwave theme.
+ */
+export enum Colors {
+  Bg = "--clr-bg-1",
+  Bg2 = "--clr-bg-2",
+  Bg3 = "--clr-bg-3",
+  Bg4 = "--clr-bg-4",
+  Bg5 = "--clr-bg-5",
+  Fg = "--clr-fg",
+  Text = "--clr-text",
+  Text2 = "--clr-text-secondary",
+  InfoText = "--clr-info-text",
+  InfoFg = "--clr-info-fg",
+  InfoBg = "--clr-info-bg",
+  SuccessText = "--clr-success-text",
+  SuccessFg = "--clr-success-fg",
+  SuccessBg = "--clr-success-bg",
+  WarningText = "--clr-warning-text",
+  WarningFg = "--clr-warning-fg",
+  WarningBg = "--clr-warning-bg",
+  ErrorText = "--clr-error-text",
+  ErrorFg = "--clr-error-fg",
+  ErrorBg = "--clr-error-bg",
+  Dimmed = "--clr-dimmed",
+  Btn = "--clr-btn",
+  BtnToggled = "--clr-btn-toggled",
+  BtnHover = "--clr-btn-hover",
+  BtnPressed = "--clr-btn-pressed",
+  BtnAdaptive = "--clr-btn-adaptive",
+  BtnAdaptiveToggled = "--clr-btn-adaptive-toggled",
+  BtnAdaptiveHover = "--clr-btn-adaptive-hover",
+  BtnAdaptivePressed = "--clr-btn-adaptive-pressed",
+  Focus = "--clr-focus",
+  Border = "--clr-border",
+  PrimaryText = "--clr-primary-text",
+  Primary0 = "--clr-primary-000",
+  Primary1 = "--clr-primary-100",
+  Primary2 = "--clr-primary-200",
+  Primary3 = "--clr-primary-300",
+  Primary4 = "--clr-primary-400",
+  Primary5 = "--clr-primary-500",
+  Primary6 = "--clr-primary-600",
+  Primary7 = "--clr-primary-700",
+  Primary8 = "--clr-primary-800",
+  Primary9 = "--clr-primary-900",
+  DangerText = "--clr-danger-text",
+  Danger0 = "--clr-danger-000",
+  Danger1 = "--clr-danger-100",
+  Danger2 = "--clr-danger-200",
+  Danger3 = "--clr-danger-300",
+  Danger4 = "--clr-danger-400",
+  Danger5 = "--clr-danger-500",
+  Danger6 = "--clr-danger-600",
+  Danger7 = "--clr-danger-700",
+  Danger8 = "--clr-danger-800",
+  Danger9 = "--clr-danger-900",
+  ListItem = "--clr-list-elem",
+  ListItemHover = "--clr-list-elem-hover",
+}
+
 Object.freeze(Box);
 Object.freeze(Button);
 Object.freeze(Card);
@@ -695,6 +756,7 @@ Object.freeze(Switch);
 Object.freeze(Theme);
 Object.freeze(Typography);
 Object.freeze(Alert);
+Object.freeze(Colors);
 
 export default {
   Box,
@@ -716,4 +778,5 @@ export default {
   Theme,
   Typography,
   Alert,
+  Colors,
 } as const;
