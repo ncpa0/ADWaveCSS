@@ -42,11 +42,31 @@ $skeleton-anim-color: #88888852;
     background-color: $skeleton-anim-color;
   }
 
+  & .alert {
+    background-color: $skeleton-anim-color;
+
+    & {
+      color: transparent;
+    }
+
+    & * {
+      opacity: 0;
+    }
+  }
+
+  & .breadcrumbs,
   & .btn.btn.btn.btn.btn {
     color: transparent;
     border-right: 0px;
     border-left: 0px;
     background-color: $skeleton-anim-color;
+  }
+
+  & .breadcrumbs {
+    & .breadcrumb-separator,
+    & .breadcrumb-item {
+      color: transparent;
+    }
   }
 
   & .input.input {
