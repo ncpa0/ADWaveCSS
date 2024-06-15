@@ -31,7 +31,7 @@
     }
 
     &.activable {
-      &:hover {
+      &:not(.active):hover {
         cursor: pointer;
         color: color("text");
         background-color: color("btn-hover");
