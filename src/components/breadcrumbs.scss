@@ -1,0 +1,41 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  padding: 0.15em 0.15em;
+  background-color: color("bg3");
+  border-radius: 4px;
+  align-items: center;
+
+  & .breadcrumb-separator {
+    color: nativeOpacity(color("text"), 60%);
+    margin: 0 0.25em;
+    height: fit-content;
+    
+    &::after{
+      content: "/";
+    }
+  }
+
+  & .breadcrumb-item {
+    @include bg-transition();
+    border: unset;
+    outline: unset;
+    font-family: Ubuntu, sans-serif;
+    padding: 0.3em 0.5em;  
+    background-color: unset;
+    border-radius: 4px;
+    color: nativeOpacity(color("text"), 60%);
+
+    &.active {
+      color: color("text");
+    }
+
+    &.activable {
+      &:hover {
+        cursor: pointer;
+        color: color("text");
+        background-color: color("btn-hover");
+      }
+    }
+  }
+}
