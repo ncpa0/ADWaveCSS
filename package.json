@@ -3,6 +3,14 @@
   "displayName": "ADWave CSS",
   "version": "0.0.13",
   "description": "Adwaita/GTK inspired CSS for the web.",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/styles.css",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "css",
     "ui",
