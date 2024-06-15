@@ -10,12 +10,15 @@ $colorNames: (
   fg: --clr-fg,
   text: --clr-text,
   text-secondary: --clr-text-secondary,
+  info-text: --clr-info-text,
+  info-fg: --clr-info-fg,
+  info-bg: --clr-info-bg,
   success-text: --clr-success-text,
   success-fg: --clr-success-fg,
   success-bg: --clr-success-bg,
-  alert-text: --clr-alert-text,
-  alert-fg: --clr-alert-fg,
-  alert-bg: --clr-alert-bg,
+  warning-text: --clr-warning-text,
+  warning-fg: --clr-warning-fg,
+  warning-bg: --clr-warning-bg,
   error-text: --clr-error-text,
   error-fg: --clr-error-fg,
   error-bg: --clr-error-bg,
@@ -121,15 +124,18 @@ $darker-4: 30%;
   $textColor: #eeeeec;
   $textSecondaryColor: #a0a0a0;
 
+  $infoText: #ffffff;
+  $infoFg: #3584e4;
+  $infoBg: #205faa;
   $successText: #ffffff;
   $successFg: #8ff0a4;
-  $successBg: #26a269;
-  $alertText: rgba(0, 0, 0, 0.8);
-  $alertFg: #f8e45c;
-  $alertBg: #cd9309;
+  $successBg: #038d4d;
+  $warningText: rgba(0, 0, 0, 0.8);
+  $warningFg: #f8e45c;
+  $warningBg: #c2a131;
   $errorText: #ffffff;
   $errorFg: #ff7b63;
-  $errorBg: #c01c28;
+  $errorBg: #9c101a;
 
   $accentColor: var(--adw-accent, #3584e4);
   $accentText: var(--adw-accent-text, #ffffff);
@@ -143,12 +149,15 @@ $darker-4: 30%;
   #{colorName("bg5")}: $bgColor5;
   #{colorName("text")}: $textColor;
   #{colorName("text-secondary")}: $textSecondaryColor;
+  #{colorName("info-text")}: $infoText;
+  #{colorName("info-fg")}: $infoFg;
+  #{colorName("info-bg")}: $infoBg;
   #{colorName("success-text")}: $successText;
   #{colorName("success-fg")}: $successFg;
   #{colorName("success-bg")}: $successBg;
-  #{colorName("alert-text")}: $alertText;
-  #{colorName("alert-fg")}: $alertFg;
-  #{colorName("alert-bg")}: $alertBg;
+  #{colorName("warning-text")}: $warningText;
+  #{colorName("warning-fg")}: $warningFg;
+  #{colorName("warning-bg")}: $warningBg;
   #{colorName("error-text")}: $errorText;
   #{colorName("error-fg")}: $errorFg;
   #{colorName("error-bg")}: $errorBg;
@@ -207,15 +216,18 @@ $darker-4: 30%;
   $textColor: rgba(0, 0, 0, 0.8);
   $textSecondaryColor: #686868;
 
+  $infoText: #ffffff;
+  $infoFg: #3584e4;
+  $infoBg: #5e99e0;
   $successText: #ffffff;
   $successFg: #1b8553;
-  $successBg: #2ec27e;
-  $alertText: rgba(0, 0, 0, 0.8);
-  $alertFg: #9c6e03;
-  $alertBg: #e5a50a;
+  $successBg: #6cc472;
+  $warningText: rgba(0, 0, 0, 0.8);
+  $warningFg: #9c6e03;
+  $warningBg: #edd453;
   $errorText: #ffffff;
   $errorFg: #c01c28;
-  $errorBg: #e01b24;
+  $errorBg: #ff4949;
 
   $accentColor: var(--adw-accent, #3584e4);
   $accentText: var(--adw-accent-text, #ffffff);
@@ -229,12 +241,15 @@ $darker-4: 30%;
   #{colorName("bg5")}: $bgColor5;
   #{colorName("text")}: $textColor;
   #{colorName("text-secondary")}: $textSecondaryColor;
+  #{colorName("info-text")}: $infoText;
+  #{colorName("info-fg")}: $infoFg;
+  #{colorName("info-bg")}: $infoBg;
   #{colorName("success-text")}: $successText;
   #{colorName("success-fg")}: $successFg;
   #{colorName("success-bg")}: $successBg;
-  #{colorName("alert-text")}: $alertText;
-  #{colorName("alert-fg")}: $alertFg;
-  #{colorName("alert-bg")}: $alertBg;
+  #{colorName("warning-text")}: $warningText;
+  #{colorName("warning-fg")}: $warningFg;
+  #{colorName("warning-bg")}: $warningBg;
   #{colorName("error-text")}: $errorText;
   #{colorName("error-fg")}: $errorFg;
   #{colorName("error-bg")}: $errorBg;
@@ -293,15 +308,18 @@ $darker-4: 30%;
   $textColor: rgba(0, 0, 0, 0.8);
   $textSecondaryColor: #686868;
 
+  $infoText: #ffffff;
+  $infoFg: #3584e4;
+  $infoBg: #5e99e0;
   $successText: #ffffff;
   $successFg: #1b8553;
-  $successBg: #2ec27e;
-  $alertText: rgba(0, 0, 0, 0.8);
-  $alertFg: #9c6e03;
-  $alertBg: #e5a50a;
+  $successBg: #6cc472;
+  $warningText: rgba(0, 0, 0, 0.8);
+  $warningFg: #9c6e03;
+  $warningBg: #edd453;
   $errorText: #ffffff;
   $errorFg: #c01c28;
-  $errorBg: #e01b24;
+  $errorBg: #ff4949;
 
   $accentColor: var(--adw-accent, #3584e4);
   $accentText: var(--adw-accent-text, #ffffff);
@@ -315,12 +333,15 @@ $darker-4: 30%;
   #{colorName("bg5")}: $bgColor5;
   #{colorName("text")}: $textColor;
   #{colorName("text-secondary")}: $textSecondaryColor;
+  #{colorName("info-text")}: $infoText;
+  #{colorName("info-fg")}: $infoFg;
+  #{colorName("info-bg")}: $infoBg;
   #{colorName("success-text")}: $successText;
   #{colorName("success-fg")}: $successFg;
   #{colorName("success-bg")}: $successBg;
-  #{colorName("alert-text")}: $alertText;
-  #{colorName("alert-fg")}: $alertFg;
-  #{colorName("alert-bg")}: $alertBg;
+  #{colorName("warning-text")}: $warningText;
+  #{colorName("warning-fg")}: $warningFg;
+  #{colorName("warning-bg")}: $warningBg;
   #{colorName("error-text")}: $errorText;
   #{colorName("error-fg")}: $errorFg;
   #{colorName("error-bg")}: $errorBg;

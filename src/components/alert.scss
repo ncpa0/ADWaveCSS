@@ -1,0 +1,27 @@
+.alert {
+  padding: 1.5em 1.5em;
+  background-color: color("bg2");
+  border-radius: size("bradius");
+  color: color("text");
+  font-family: "Ubuntu", sans-serif;
+  
+  &.info {
+    background-color: color("info-bg");
+    color: color("info-text");
+  }
+  
+  &.success {
+    background-color: color("success-bg");
+    color: color("success-text");
+  }
+
+  &.warning {
+    background-color: color("warning-bg");
+    color: color("warning-text");
+  }
+
+  &.error {
+    background-color: color("error-bg");
+    color: color("error-text");
+  }
+}

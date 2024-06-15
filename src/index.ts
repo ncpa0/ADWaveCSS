@@ -327,21 +327,21 @@ export class Message {
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/message.md#ClassNames
    */
-  static readonly alert = "alert";
+  static readonly warning = "warning";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/message.md#ClassNames
    */
   static readonly error = "error";
 
-  static className(params: { type?: "success" | "alert" | "error" }) {
+  static className(params: { type?: "success" | "warning" | "error" }) {
     let className = Message.message;
     if (params.type) {
       switch (params.type) {
         case "success":
           className += ` ${Message.success}`;
           break;
-        case "alert":
-          className += ` ${Message.alert}`;
+        case "warning":
+          className += ` ${Message.warning}`;
           break;
         case "error":
           className += ` ${Message.error}`;
@@ -654,6 +654,28 @@ export class Typography {
   }
 }
 
+export class Alert {
+  static readonly alert = "alert";
+  static readonly info = "info";
+  static readonly success = "success";
+  static readonly warning = "warning";
+  static readonly error = "error";
+
+  static className(params: { type?: "info" | "success" | "warning" | "error" }) {
+    switch (params.type) {
+      case "info":
+        return `${Alert.alert} ${Alert.info}`;
+      case "success":
+        return `${Alert.alert} ${Alert.success}`;
+      case "warning":
+        return `${Alert.alert} ${Alert.warning}`;
+      case "error":
+        return `${Alert.alert} ${Alert.error}`;
+    }
+    return Alert.alert;
+  }
+}
+
 Object.freeze(Box);
 Object.freeze(Button);
 Object.freeze(Card);
@@ -672,6 +694,7 @@ Object.freeze(Suggestions);
 Object.freeze(Switch);
 Object.freeze(Theme);
 Object.freeze(Typography);
+Object.freeze(Alert);
 
 export default {
   Box,
@@ -692,4 +715,5 @@ export default {
   Switch,
   Theme,
   Typography,
+  Alert,
 } as const;
