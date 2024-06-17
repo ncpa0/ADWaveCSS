@@ -1,6 +1,10 @@
 .message {
   font-family: "Ubuntu", sans-serif;
 
+  &.info {
+    color: color("info-fg");
+  }
+
   &.success {
     color: color("success-fg");
   }

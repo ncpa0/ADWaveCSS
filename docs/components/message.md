@@ -4,11 +4,13 @@
 
 Message class changes the font color to the primary text color (blue).
 
+## Info Message
+
 ```html
-<p class="message">Info!</p>
+<p class="message info">Info!</p>
 ```
 
-## Succcess Message
+## Success Message
 
 Success message has a green font color.
 
