@@ -1,0 +1,18 @@
+.dialog {
+    background-color: color("bg4");
+    border-radius: size("bradius");
+    display: flex;
+    flex-direction: column;
+
+
+    & .dialog-header {
+        background-color: color("bg3");
+        border-top-left-radius: size("bradius");
+        border-top-right-radius: size("bradius");
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.2em;
+    }
+}
