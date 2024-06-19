@@ -1,21 +1,33 @@
 .box {
   @include scrollbar;
   display: flex;
-  background-color: color("bg1");
+  background-color: color("bg2");
 
   &.rounded {
     border-radius: size("bradius");
   }
 
-  &.bg-level-2 {
+  &.bg-1 {
+    background-color: color("bg1");
+  }
+
+  &.bg-2 {
     background-color: color("bg2");
   }
 
-  &.bg-level-3 {
+  &.bg-3 {
     background-color: color("bg3");
   }
 
-  &.bg-level-4 {
+  &.bg-4 {
     background-color: color("bg4");
+  }
+
+  &.bg-5 {
+    background-color: color("bg5");
+  }
+
+  &.bg-6 {
+    background-color: color("bg6");
   }
 }
