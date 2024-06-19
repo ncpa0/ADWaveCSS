@@ -13,6 +13,10 @@ $noPositionClassName: ".no-position";
     .slider-progress {
       background-color: color-mix(in srgb, color("btn") 65%, #dfdfdf);
     }
+
+    .slider-thumb {
+      background-color: nativeDarken(color("slider-thumb"), 20%);
+    }
   }
 
   &:not(#{$noPositionClassName}) {
@@ -52,10 +56,11 @@ $noPositionClassName: ".no-position";
   }
 
   .slider-thumb {
+    @include box-shadow(1.5px, 1.5px);
     height: 0.75em;
     width: 0.75em;
     border-radius: 18px;
-    background-color: color-mix(in srgb, color("btn") 50%, #888888);
+    background-color: color("slider-thumb");
 
     &:not(#{$noPositionClassName}) {
       position: absolute;

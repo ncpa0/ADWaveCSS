@@ -1,14 +1,11 @@
 export class Theme {
   static readonly dark = "dark-theme";
   static readonly light = "light-theme";
-  static readonly light2 = "light-theme-2";
 
-  static className(params: { type?: "dark" | "light" | "light2" }) {
+  static className(params: { type?: "dark" | "light" }) {
     switch (params.type) {
       case "light":
         return Theme.light;
-      case "light2":
-        return Theme.light2;
     }
     return Theme.dark;
   }
@@ -29,31 +26,52 @@ export class Box {
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
    */
-  static readonly bg2 = "bg-level-2";
+  static readonly bg1 = "bg-1";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
    */
-  static readonly bg3 = "bg-level-3";
+  static readonly bg2 = "bg-2";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
    */
-  static readonly bg4 = "bg-level-4";
+  static readonly bg3 = "bg-3";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
+   */
+  static readonly bg4 = "bg-4";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
+   */
+  static readonly bg5 = "bg-5";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/box.md#ClassNames
+   */
+  static readonly bg6 = "bg-6";
 
-  static className(params: { rounded?: boolean; bg?: 1 | 2 | 3 | 4 }) {
+  static className(params: { rounded?: boolean; bg?: 1 | 2 | 3 | 4 | 5 | 6 }) {
     let className = Box.box;
     if (params.rounded) {
       className += ` ${Box.rounded}`;
     }
     if (params.bg) {
       switch (params.bg) {
-        case 4:
-          className += ` ${Box.bg4}`;
+        case 1:
+          className += ` ${Box.bg1}`;
+          break;
+        case 2:
+          className += ` ${Box.bg2}`;
           break;
         case 3:
           className += ` ${Box.bg3}`;
           break;
-        case 2:
-          className += ` ${Box.bg2}`;
+        case 4:
+          className += ` ${Box.bg4}`;
+          break;
+        case 5:
+          className += ` ${Box.bg5}`;
+          break;
+        case 6:
+          className += ` ${Box.bg6}`;
           break;
       }
     }
@@ -661,7 +679,9 @@ export class Alert {
   static readonly warning = "warning";
   static readonly error = "error";
 
-  static className(params: { type?: "info" | "success" | "warning" | "error" }) {
+  static className(params: {
+    type?: "info" | "success" | "warning" | "error";
+  }) {
     switch (params.type) {
       case "info":
         return `${Alert.alert} ${Alert.info}`;

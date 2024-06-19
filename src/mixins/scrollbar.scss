@@ -12,11 +12,11 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: color("bg4");
+    background-color: color("bg6");
     border-radius: size("bradius");
   }
 
   &::-webkit-scrollbar-track:hover {
-    background-color: color-mix(in srgb, color("bg4"), transparent 70%);
+    background-color: color-mix(in srgb, color("bg6"), transparent 70%);
   }
 }

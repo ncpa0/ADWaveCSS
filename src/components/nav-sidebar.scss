@@ -16,15 +16,15 @@
     font-family: "Ubuntu", sans-serif;
 
     &.active {
-      background-color: rgba(128, 128, 128, 0.3);
-    }
-
-    &:hover {
       background-color: rgba(128, 128, 128, 0.25);
     }
 
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.2);
+    }
+
     &:active {
-      background-color: rgba(128, 128, 128, 0.4);
+      background-color: rgba(128, 128, 128, 0.3);
     }
 
     &:focus-visible {
