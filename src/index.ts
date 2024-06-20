@@ -341,6 +341,10 @@ export class Message {
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/message.md#ClassNames
    */
+  static readonly info = "info";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/message.md#ClassNames
+   */
   static readonly success = "success";
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/message.md#ClassNames
@@ -351,10 +355,15 @@ export class Message {
    */
   static readonly error = "error";
 
-  static className(params: { type?: "success" | "warning" | "error" }) {
+  static className(params: {
+    type?: "info" | "success" | "warning" | "error";
+  }) {
     let className = Message.message;
     if (params.type) {
       switch (params.type) {
+        case "info":
+          className += ` ${Message.info}`;
+          break;
         case "success":
           className += ` ${Message.success}`;
           break;
@@ -700,11 +709,12 @@ export class Alert {
  * All CSS variables with colors provided by the Adwave theme.
  */
 export enum Colors {
-  Bg = "--clr-bg-1",
+  Bg1 = "--clr-bg-1",
   Bg2 = "--clr-bg-2",
   Bg3 = "--clr-bg-3",
   Bg4 = "--clr-bg-4",
   Bg5 = "--clr-bg-5",
+  Bg6 = "--clr-bg-6",
   Fg = "--clr-fg",
   Text = "--clr-text",
   Text2 = "--clr-text-secondary",
@@ -754,7 +764,12 @@ export enum Colors {
   Danger8 = "--clr-danger-800",
   Danger9 = "--clr-danger-900",
   ListItem = "--clr-list-elem",
+  ListItemBorder = "--clr-list-elem-border",
   ListItemHover = "--clr-list-elem-hover",
+  ListItem2 = "--clr-list-elem-2",
+  ListItemBorder2 = "--clr-list-elem-border-2",
+  ListItemHover2 = "--clr-list-elem-hover-2",
+  SliderThumb = "--clr-slider-thumb",
 }
 
 Object.freeze(Box);
