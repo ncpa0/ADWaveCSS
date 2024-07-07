@@ -705,6 +705,29 @@ export class Alert {
   }
 }
 
+export class BreadCrumbs {
+  static readonly Breadcrumbs = "breadcrumbs";
+  static readonly Item = "breadcrumb-item";
+  static readonly Separator = "breadcrumb-separator";
+  static readonly Active = "active";
+  static readonly Activable = "activable";
+
+  static className() {
+    return BreadCrumbs.Breadcrumbs;
+  }
+
+  static itemClassName(params: { active?: boolean; activable?: boolean }) {
+    let className = BreadCrumbs.Item;
+    if (params.active) {
+      className += ` ${BreadCrumbs.Active}`;
+    }
+    if (params.activable) {
+      className += ` ${BreadCrumbs.Activable}`;
+    }
+    return className;
+  }
+}
+
 /**
  * All CSS variables with colors provided by the Adwave theme.
  */
@@ -792,6 +815,7 @@ Object.freeze(Theme);
 Object.freeze(Typography);
 Object.freeze(Alert);
 Object.freeze(Colors);
+Object.freeze(BreadCrumbs);
 
 export default {
   Box,
@@ -813,5 +837,6 @@ export default {
   Theme,
   Typography,
   Alert,
+  BreadCrumbs,
   Colors,
 } as const;
