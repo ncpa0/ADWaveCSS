@@ -63,6 +63,8 @@ $colorNames: (
   list-elem-border-2: --clr-list-elem-border-2,
   list-elem-hover-2: --clr-list-elem-hover-2,
   slider-thumb: --clr-slider-thumb,
+  spinner-bg: --clr-spinner-bg,
+  spinner-fg: --clr-spinner-fg,
 );
 
 @function nativeLighten($color, $amount) {
@@ -89,7 +91,7 @@ $colorNames: (
 }
 
 $sizes: (
-  bradius: --border-radius
+  bradius: --border-radius,
 );
 
 @function sizeName($name) {
@@ -209,6 +211,8 @@ $darker-4: 30%;
   #{colorName("list-elem-border-2")}: $bgColor2;
   #{colorName("list-elem-hover-2")}: lighten($listElem2, 7.5%);
   #{colorName("slider-thumb")}: hsl(0, 0%, 90%);
+  #{colorName("spinner-bg")}: #c6c6c6;
+  #{colorName("spinner-fg")}: #313131;
 
   & * {
     color: color("text");
@@ -309,6 +313,8 @@ $darker-4: 30%;
   #{colorName("list-elem-border-2")}: hsl(0deg 0% 88% / 1);
   #{colorName("list-elem-hover-2")}: darken($listElem2, 3%);
   #{colorName("slider-thumb")}: hsl(0, 0%, 98%);
+  #{colorName("spinner-bg")}: #a9a9a9;
+  #{colorName("spinner-fg")}: #f2f2f2;
 
   & * {
     color: color("text");

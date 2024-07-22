@@ -527,6 +527,11 @@ export class Skeleton {
   }
 }
 
+export class Spinner {
+  static readonly spinner = "spinner";
+  static readonly innerCircle = "inner-circle";
+}
+
 /**
  * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/slider.md
  */
@@ -808,6 +813,7 @@ Object.freeze(ScrollView);
 Object.freeze(Selector);
 Object.freeze(Separator);
 Object.freeze(Skeleton);
+Object.freeze(Spinner);
 Object.freeze(Slider);
 Object.freeze(Suggestions);
 Object.freeze(Switch);
@@ -831,6 +837,7 @@ export default {
   Selector,
   Separator,
   Skeleton,
+  Spinner,
   Slider,
   Suggestions,
   Switch,

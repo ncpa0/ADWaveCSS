@@ -1,0 +1,30 @@
+.spinner {
+  width: 1em;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 100px;
+  background-color: color("spinner-bg");
+  animation-name: spinner-spin;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  .inner-circle {
+    width: 0.8em;
+    height: 0.8em;
+    display: block;
+    border-radius: 100px;
+    background-color: color("spinner-fg");
+  }
+}
+
+@keyframes spinner-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -102,6 +102,13 @@ $skeleton-anim-color: #88888852;
     }
   }
 
+  & .spinner {
+    background: $skeleton-anim-color;
+    & .inner-circle {
+      background: $skeleton-anim-color;
+    }
+  }
+
   & .separator {
     opacity: 0;
   }

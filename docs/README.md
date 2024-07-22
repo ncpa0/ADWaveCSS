@@ -18,9 +18,10 @@
 14. [separator](./components/separator.md)
 15. [skeleton](./components/skeleton.md)
 16. [slider](./components/slider.md)
-17. [suggestions](./components/suggestions.md)
-18. [switch](./components/switch.md)
-19. [typography](./components/typography.md)
+17. [spinner](./components/spinner.md)
+18. [suggestions](./components/suggestions.md)
+19. [switch](./components/switch.md)
+20. [typography](./components/typography.md)
 
 ## Themes
 
