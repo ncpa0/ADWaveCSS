@@ -14,14 +14,15 @@
 10. [list](./components/list.md)
 11. [message](./components/message.md)
 12. [nav-sidebar](./components/nav-sidebar.md)
-13. [selector](./components/selector.md)
-14. [separator](./components/separator.md)
-15. [skeleton](./components/skeleton.md)
-16. [slider](./components/slider.md)
-17. [spinner](./components/spinner.md)
-18. [suggestions](./components/suggestions.md)
-19. [switch](./components/switch.md)
-20. [typography](./components/typography.md)
+13. [scrollview](./components/scrollview.md)
+14. [selector](./components/selector.md)
+15. [separator](./components/separator.md)
+16. [skeleton](./components/skeleton.md)
+17. [slider](./components/slider.md)
+18. [spinner](./components/spinner.md)
+19. [suggestions](./components/suggestions.md)
+20. [switch](./components/switch.md)
+21. [typography](./components/typography.md)
 
 ## Themes
 
