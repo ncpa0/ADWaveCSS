@@ -12,6 +12,10 @@ CSS styles are located in the `dist/styles.css` file. If used with esbuild or we
 import "adwavecss/dist/styles.css";
 ```
 
+## Components
+
+See docs for all components [here](./docs/README.md).
+
 ### JavaScript class name bindings
 
 ```js
@@ -33,7 +37,3 @@ const toggleSwitch = () => {
   switchElem.classList.toggle(ADWave.Switch.active);
 };
 ```
-
-## Components
-
-See all components [here](./docs/README.md).
