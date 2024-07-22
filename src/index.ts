@@ -257,6 +257,21 @@ export class Checkbox {
   }
 }
 
+export class Dialog {
+  static readonly dialog = "dialog";
+  static readonly header = "dialog-header";
+  static readonly title = "dailog-title";
+  static readonly body = "dialog-body";
+
+  static className() {
+    return Dialog.dialog;
+  }
+
+  static toString() {
+    return Dialog.dialog;
+  }
+}
+
 /**
  * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/frame.md
  */
@@ -888,6 +903,7 @@ Object.freeze(Box);
 Object.freeze(Button);
 Object.freeze(Card);
 Object.freeze(Checkbox);
+Object.freeze(Dialog);
 Object.freeze(Frame);
 Object.freeze(Input);
 Object.freeze(List);
@@ -912,6 +928,7 @@ export default {
   Button,
   Card,
   Checkbox,
+  Dialog,
   Frame,
   Input,
   List,

@@ -118,12 +118,12 @@ $darker-3: 20%;
 $darker-4: 30%;
 
 .dark-theme {
-  $bgColor1: hsl(0deg 0% 5%);
-  $bgColor2: hsl(0deg 0% 14.12%);
+  $bgColor1: hsl(0deg 0% 8%);
+  $bgColor2: hsl(0deg 0% 12.12%);
   $bgColor3: hsl(0deg 0% 18.82%);
   $bgColor4: hsl(0deg 0% 18.82%);
-  $bgColor5: hsl(0deg 0% 25.88%);
-  $bgColor6: hsl(0deg 0% 31.37%);
+  $bgColor5: hsl(0deg 0% 23.88%);
+  $bgColor6: hsl(0deg 0% 29.37%);
   $dimmedColor: lighten($bgColor2, 15%);
   $btnColor: #464646;
   $btnAdaptiveColor: rgb(96 96 96 / 55%);
@@ -221,8 +221,8 @@ $darker-4: 30%;
 
 .light-theme {
   $bgColor1: hsl(0deg 0% 100% / 1);
-  $bgColor2: hsl(0deg 0% 98% / 1);
-  $bgColor3: hsl(0deg 0% 93% / 1);
+  $bgColor2: hsl(0deg 0% 96% / 1);
+  $bgColor3: hsl(0deg 0% 91% / 1);
   $bgColor4: hsl(0deg 0% 100% / 1);
   $bgColor5: hsl(0deg 0% 86% / 1);
   $bgColor6: hsl(0deg 0% 80% / 1);

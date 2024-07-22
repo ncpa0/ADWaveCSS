@@ -1,0 +1,45 @@
+.dialog {
+  all: revert;
+  border: none;
+  background-color: color("bg1");
+  border-radius: size("bradius");
+  padding: 0;
+
+  &:is(dialog) {
+    &:modal {
+      max-width: unset;
+      max-height: unset;
+    }
+  }
+
+  &:not(dialog),
+  &:is(dialog)[open] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .dialog-header {
+    background-color: color("bg2");
+    border-top-left-radius: size("bradius");
+    border-top-right-radius: size("bradius");
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 2.4em;
+    padding: 0.1em;
+    font-size: 1em;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+
+    & .dialog-title {
+      flex: 1;
+      margin-inline: 0.5em;
+      text-align: center;
+    }
+  }
+
+  & .dialog-body {
+    padding: 0.5em;
+  }
+}
