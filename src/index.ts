@@ -9,6 +9,10 @@ export class Theme {
     }
     return Theme.dark;
   }
+
+  static toString() {
+    return Theme.dark;
+  }
 }
 
 /**
@@ -76,6 +80,10 @@ export class Box {
       }
     }
     return className;
+  }
+
+  static toString() {
+    return Box.box;
   }
 }
 
@@ -191,6 +199,10 @@ export class Button {
     }
     return className;
   }
+
+  static toString() {
+    return Button.button;
+  }
 }
 
 /**
@@ -212,6 +224,10 @@ export class Card {
       className += ` ${Card.activable}`;
     }
     return className;
+  }
+
+  static toString() {
+    return Card.card;
   }
 }
 
@@ -235,6 +251,10 @@ export class Checkbox {
     }
     return className;
   }
+
+  static toString() {
+    return Checkbox.checkbox;
+  }
 }
 
 /**
@@ -247,6 +267,10 @@ export class Frame {
   static readonly frame = "frame";
 
   static className() {
+    return Frame.frame;
+  }
+
+  static toString() {
     return Frame.frame;
   }
 }
@@ -297,6 +321,10 @@ export class Input {
   static wrapperClassName() {
     return Input.wrapper;
   }
+
+  static toString() {
+    return Input.input;
+  }
 }
 
 /**
@@ -327,6 +355,10 @@ export class List {
       className += ` ${List.activableElement}`;
     }
     return className;
+  }
+
+  static toString() {
+    return List.list;
   }
 }
 
@@ -377,6 +409,10 @@ export class Message {
     }
     return className;
   }
+
+  static toString() {
+    return Message.message;
+  }
 }
 
 /**
@@ -412,12 +448,20 @@ export class NavSidebar {
   static separatorClassName() {
     return NavSidebar.separator;
   }
+
+  static toString() {
+    return NavSidebar.navSidebar;
+  }
 }
 
 export class ScrollView {
   static readonly scrollView = "scrollview";
 
   static className() {
+    return ScrollView.scrollView;
+  }
+
+  static toString() {
     return ScrollView.scrollView;
   }
 }
@@ -504,6 +548,10 @@ export class Selector {
     let className = Selector.downButton;
     return className;
   }
+
+  static toString() {
+    return Selector.selector;
+  }
 }
 
 export class Separator {
@@ -517,6 +565,10 @@ export class Separator {
     }
     return className;
   }
+
+  static toString() {
+    return Separator.separator;
+  }
 }
 
 export class Skeleton {
@@ -525,11 +577,19 @@ export class Skeleton {
   static className() {
     return Skeleton.skeleton;
   }
+
+  static toString() {
+    return Skeleton.skeleton;
+  }
 }
 
 export class Spinner {
   static readonly spinner = "spinner";
   static readonly innerCircle = "inner-circle";
+
+  static toString() {
+    return Spinner.spinner;
+  }
 }
 
 /**
@@ -586,6 +646,10 @@ export class Slider {
     let className = Slider.thumb;
     return className;
   }
+
+  static toString() {
+    return Slider.slider;
+  }
 }
 
 /**
@@ -616,6 +680,10 @@ export class Suggestions {
       className += ` ${Suggestions.active}`;
     }
     return className;
+  }
+
+  static toString() {
+    return Suggestions.suggestions;
   }
 }
 
@@ -649,6 +717,10 @@ export class Switch {
       className += ` ${Switch.active}`;
     }
     return className;
+  }
+
+  static toString() {
+    return Switch.switch;
   }
 }
 
@@ -684,6 +756,10 @@ export class Typography {
     }
     return Typography.text;
   }
+
+  static toString() {
+    return Typography.text;
+  }
 }
 
 export class Alert {
@@ -708,21 +784,25 @@ export class Alert {
     }
     return Alert.alert;
   }
+
+  static toString() {
+    return Alert.alert;
+  }
 }
 
 export class BreadCrumbs {
-  static readonly Breadcrumbs = "breadcrumbs";
-  static readonly Item = "breadcrumb-item";
-  static readonly Separator = "breadcrumb-separator";
+  static readonly breadcrumbs = "breadcrumbs";
+  static readonly item = "breadcrumb-item";
+  static readonly separator = "breadcrumb-separator";
   static readonly Active = "active";
   static readonly Activable = "activable";
 
   static className() {
-    return BreadCrumbs.Breadcrumbs;
+    return BreadCrumbs.breadcrumbs;
   }
 
   static itemClassName(params: { active?: boolean; activable?: boolean }) {
-    let className = BreadCrumbs.Item;
+    let className = BreadCrumbs.item;
     if (params.active) {
       className += ` ${BreadCrumbs.Active}`;
     }
@@ -730,6 +810,10 @@ export class BreadCrumbs {
       className += ` ${BreadCrumbs.Activable}`;
     }
     return className;
+  }
+
+  static toString() {
+    return BreadCrumbs.breadcrumbs;
   }
 }
 
