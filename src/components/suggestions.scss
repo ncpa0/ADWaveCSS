@@ -1,13 +1,13 @@
 .suggestions {
-  @include scrollbar;
   background-color: color("btn");
   border-radius: size("bradius");
+  @include scrollbar;
 
   .suggestions-option {
-    @include bg-transition(0.1s);
     background-color: color("btn");
     background-clip: padding-box;
     padding: 0.5em;
+    @include bg-transition(0.1s);
 
     &.active {
       background-color: color("btn-hover");

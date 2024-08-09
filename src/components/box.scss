@@ -1,7 +1,7 @@
 .box {
-  @include scrollbar;
   display: flex;
   background-color: color("bg2");
+  @include scrollbar;
 
   &.rounded {
     border-radius: size("bradius");

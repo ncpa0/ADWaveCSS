@@ -45,7 +45,6 @@ $noPositionClassName: ".no-position";
     height: 0.3em;
     border-radius: 18px;
     background-color: color("primary-400");
-    border: 1px solid color("btn-border");
 
     &:not(#{$noPositionClassName}) {
       position: absolute;
@@ -56,11 +55,11 @@ $noPositionClassName: ".no-position";
   }
 
   .slider-thumb {
-    @include box-shadow(1.5px, 1.5px);
     height: 0.75em;
     width: 0.75em;
     border-radius: 18px;
     background-color: color("slider-thumb");
+    @include box-shadow(1.5px, 1.5px);
 
     &:not(#{$noPositionClassName}) {
       position: absolute;

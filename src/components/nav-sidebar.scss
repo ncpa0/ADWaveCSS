@@ -1,11 +1,10 @@
 .nav-sidebar {
-  @include scrollbar;
   display: flex;
   flex-direction: column;
   padding: 0.25em;
+  @include scrollbar;
 
   .nav-sidebar-btn {
-    @include bg-transition(0.1s);
     display: flex;
     font-size: inherit;
     border: unset;
@@ -14,6 +13,7 @@
     padding: 0.5em 0.7em;
     background-color: transparent;
     font-family: "Ubuntu", sans-serif;
+    @include bg-transition(0.1s);
 
     &.active {
       background-color: rgba(128, 128, 128, 0.25);

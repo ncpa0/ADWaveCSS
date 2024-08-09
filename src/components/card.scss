@@ -1,13 +1,17 @@
 .card {
-  @include box-shadow(8px, -4px);
   border-radius: size("bradius");
   background-color: color("bg4");
   padding: 0.85em 1.15em;
+  @include box-shadow(8px, -4px);
 
   &.activable {
     @include bg-transition();
     &:hover {
-      background-color: color-mix(in srgb, color("bg4") 90%, rgb(128, 128, 128));
+      background-color: color-mix(
+        in srgb,
+        color("bg4") 90%,
+        rgb(128, 128, 128)
+      );
     }
   }
 }

@@ -1,5 +1,4 @@
 .checkbox {
-  @include bg-transition();
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
@@ -14,6 +13,7 @@
   transform: translateY(-0.075em);
   display: grid;
   place-content: center;
+  @include bg-transition();
 
   &::before {
     width: 0.75em;

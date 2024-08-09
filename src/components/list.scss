@@ -1,16 +1,16 @@
 .list {
-  @include scrollbar;
-  @include box-shadow(8px, -4px);
   $listBorderRadius: size("bradius");
   $listSeparatorColor: color("list-elem-border");
   $listSeparatorColor2: color("list-elem-border-2");
   border-radius: $listBorderRadius;
+  @include scrollbar;
+  @include box-shadow(8px, -4px);
 
   .list-element {
-    @include bg-transition(0.1s);
     background-color: color("list-elem");
     background-clip: padding-box;
     padding: 1em 1.15em;
+    @include bg-transition(0.1s);
 
     &:first-child {
       border-top-left-radius: $listBorderRadius;
@@ -44,7 +44,7 @@
       &:not(:first-child) {
         border-top: 1px solid $listSeparatorColor2;
       }
-  
+
       &:not(:last-child) {
         border-bottom: 1px solid $listSeparatorColor2;
       }

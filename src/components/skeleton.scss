@@ -17,8 +17,8 @@ $skeleton-anim-color: #88888852;
 }
 
 .skeleton {
-  @include MaskAnimation;
   pointer-events: none;
+  @include MaskAnimation;
 
   & * {
     pointer-events: inherit;

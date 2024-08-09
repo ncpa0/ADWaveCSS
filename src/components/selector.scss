@@ -2,7 +2,6 @@ $noPositionClassName: ".no-position";
 $elementHeight: 1.8em;
 
 .selector {
-  @include bg-transition();
   background-color: color("btn");
   border-radius: size("bradius");
   border: 1px solid color("btn");
@@ -11,6 +10,7 @@ $elementHeight: 1.8em;
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  @include bg-transition();
 
   &:not(#{$noPositionClassName}) {
     position: relative;
@@ -68,7 +68,6 @@ $elementHeight: 1.8em;
   }
 
   .options-list {
-    @include scrollbar;
     border-radius: size("bradius");
     background-color: color("btn");
     padding: 0.4em;
@@ -76,6 +75,7 @@ $elementHeight: 1.8em;
     flex-direction: column;
 
     $listMargin: 0.3em;
+    @include scrollbar;
 
     &.top {
       margin-bottom: $listMargin;
@@ -102,7 +102,6 @@ $elementHeight: 1.8em;
     }
 
     .option {
-      @include bg-transition(0.1s);
       background-color: transparent;
       border-radius: size("bradius");
       border: unset;
@@ -113,6 +112,7 @@ $elementHeight: 1.8em;
       justify-content: flex-start;
       user-select: none;
       text-align: left;
+      @include bg-transition(0.1s);
 
       &:hover {
         background-color: color("btn-hover");

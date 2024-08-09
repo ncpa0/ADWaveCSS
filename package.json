@@ -1,12 +1,13 @@
 {
   "name": "adwavecss",
   "displayName": "ADWave CSS",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Adwaita/GTK inspired CSS for the web.",
   "files": [
     "dist/index.js",
     "dist/index.d.ts",
     "dist/styles.css",
+    "dist/styles.min.css",
     "package.json",
     "README.md",
     "LICENSE"
@@ -38,23 +39,28 @@
       "types": "./dist/index.d.ts"
     },
     "./styles": "./dist/styles.css",
-    "./dist/styles.css": "./dist/styles.css"
+    "./styles.min": "./dist/styles.min.css",
+    "./dist/styles.css": "./dist/styles.css",
+    "./dist/styles.min.css": "./dist/styles.min.css"
   },
   "scripts": {
     "build:js": "tsc",
     "watch:js": "tsc --watch",
-    "build:css": "sass src/main.scss dist/styles.css --style=compressed --no-source-map",
+    "build:css:min": "sass src/main.scss dist/styles.min.css --style=compressed --no-source-map && yarn postbuild",
+    "build:css:full": "sass src/main.scss dist/styles.css --no-source-map",
+    "build:css": "yarn build:css:min && yarn build:css:full",
     "build:css:dev": "sass src/main.scss dist/styles.css",
     "watch:css": "sass src/main.scss dist/styles.css --watch",
     "build": "yarn build:js && yarn build:css",
     "build:dev": "yarn build:js && yarn build:css:dev",
+    "postbuild": "node ./scripts/post-build.cjs",
     "watch": "yarn watch:js & yarn watch:css",
     "format": "prettier --write ./src/**/*.{scss, ts}",
     "release": "gio trash ./dist/* && yarn build && npm publish --access public"
   },
   "devDependencies": {
-    "prettier": "latest",
-    "sass": "latest",
-    "typescript": "latest"
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4"
   }
 }

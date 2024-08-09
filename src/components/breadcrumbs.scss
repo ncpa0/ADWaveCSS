@@ -10,21 +10,21 @@
     color: nativeOpacity(color("text"), 60%);
     margin: 0 0.25em;
     height: fit-content;
-    
-    &::after{
+
+    &::after {
       content: "/";
     }
   }
 
   & .breadcrumb-item {
-    @include bg-transition();
     border: unset;
     outline: unset;
     font-family: Ubuntu, sans-serif;
-    padding: 0.3em 0.5em;  
+    padding: 0.3em 0.5em;
     background-color: unset;
     border-radius: 4px;
     color: nativeOpacity(color("text"), 60%);
+    @include bg-transition();
 
     &.active {
       color: color("text");
