@@ -1,5 +1,5 @@
 $noPositionClassName: ".no-position";
-$elementHeight: 1.8em;
+$elementHeight: 2em;
 
 .selector {
   background-color: color("btn");
@@ -10,6 +10,7 @@ $elementHeight: 1.8em;
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  align-items: center;
   @include bg-transition();
 
   &:not(#{$noPositionClassName}) {
@@ -32,7 +33,7 @@ $elementHeight: 1.8em;
     color: color("text");
     border-bottom-left-radius: size("bradius");
     border-top-left-radius: size("bradius");
-    padding: 0.3em 0.9em;
+    padding: 0 0.9em;
     font-family: "Ubuntu", sans-serif;
     user-select: none;
     flex: 1;

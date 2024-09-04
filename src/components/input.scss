@@ -7,6 +7,7 @@
   padding: 0.3em 0.5em;
   font-family: "Ubuntu", sans-serif;
   border: none;
+  min-height: 2em;
 
   $placeholderColor: color-mix(in srgb, color("text") 40%, rgb(128, 128, 128));
 
