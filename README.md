@@ -2,7 +2,7 @@
 
 Adwaita/GTK inspired CSS for the web.
 
-See [examples here](https://ncpa0.github.io/adwave-docs).
+See [examples here](http://adwave.qzz.io/).
 
 ## Usage
 
