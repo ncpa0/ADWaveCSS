@@ -21,7 +21,7 @@
 
   &.disabled {
     color: nativeOpacity($placeholderColor, 70%);
-    cursor: not-allowed;
+    cursor: var(--disabled-cursor);
     caret-color: transparent;
 
     &::placeholder {

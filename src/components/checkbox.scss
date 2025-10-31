@@ -42,6 +42,6 @@
 
   &.disabled {
     background-color: hsl(0 0% 65% / 1);
-    cursor: not-allowed;
+    cursor: var(--disabled-cursor);
   }
 }

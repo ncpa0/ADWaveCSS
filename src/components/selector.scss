@@ -23,7 +23,7 @@ $elementHeight: 2em;
   }
 
   &.disabled {
-    cursor: not-allowed;
+    cursor: var(--disabled-cursor);
     .selected-option {
       color: nativeOpacity(color("text"), 60%);
     }

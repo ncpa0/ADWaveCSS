@@ -62,6 +62,38 @@ Accent and danger colors can be changed via the css variables: `--clr-accent`, `
 </div>
 ```
 
+## Disabled elements cursor
+
+By default every disabled element will have a `not-allowed` cursor property. This can be changed by either adding a special class name to one of it's parent or changing the CSS variable.
+
+The available class names are:
+- `disabled-cursor-none` - disabled elements will have the default cursor when hovered
+- `disabled-cursor-pointer` - disabled elements will have the pointer cursor when hovered (same as when enabled)
+
+### Parent class example
+
+```html
+<div class="root dark-theme disabled-cursor-none">
+  <button class="btn disabled" disabled>Disabled Button</button>
+  <input class="input disabled" disabled></input>
+</div>
+```
+
+### CSS variable example
+
+```html
+<style>
+.disabled-custom-cursor {
+  --disabled-cursor: no-drop;
+}
+</style>
+
+<div class="root dark-theme disabled-custom-cursor">
+  <button class="btn disabled" disabled>Disabled Button</button>
+  <input class="input disabled" disabled></input>
+</div>
+```
+
 ## Patterns
 
 ### Font size

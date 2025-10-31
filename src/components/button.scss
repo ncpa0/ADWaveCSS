@@ -117,7 +117,7 @@
 
   &.disabled {
     color: nativeOpacity(color("text"), 60%);
-    cursor: not-allowed;
+    cursor: var(--disabled-cursor);
   }
 
   &:hover:not(.toggled, .disabled) {

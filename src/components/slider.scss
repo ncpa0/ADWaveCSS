@@ -8,7 +8,7 @@ $noPositionClassName: ".no-position";
   user-select: none;
 
   &.disabled {
-    cursor: not-allowed;
+    cursor: var(--disabled-cursor);
 
     .slider-progress {
       background-color: color-mix(in srgb, color("btn") 65%, #dfdfdf);

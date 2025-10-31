@@ -104,6 +104,7 @@ $sizes: (
 
 :root {
   #{sizeName("bradius")}: 8px;
+  --disabled-cursor: not-allowed;
 }
 
 $lighter-1: 5%;
@@ -319,4 +320,12 @@ $darker-4: 30%;
   & * {
     color: color("text");
   }
+}
+
+.disabled-cursor-none {
+  --disabled-cursor: default;
+}
+
+.disabled-cursor-pointer {
+  --disabled-cursor: pointer;
 }

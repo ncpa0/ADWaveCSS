@@ -23,7 +23,7 @@ $swBtnMargin: 0.15em;
   }
 
   &.disabled {
-    cursor: not-allowed;
+    cursor: var(--disabled-cursor);
     &.active {
       background-color: color-mix(
         in srgb,
