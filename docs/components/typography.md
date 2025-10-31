@@ -40,7 +40,7 @@ Header is much bigger than regular text and is bolder.
 </p>
 ```
 
-Headers can have four different sizes, `header-sm` is slighty lower font size than the default and the `header-xl` and `header-xl` and `header-xxl` are higher font size.
+Headers can have four different sizes, `header-sm` is slighty lower font size than the default and the `header-xl` and `header-xxl` are higher font size.
 
 # Class Names
 

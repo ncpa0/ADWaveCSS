@@ -13,6 +13,10 @@ export class Theme {
   static toString() {
     return Theme.dark;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 /**
@@ -84,6 +88,10 @@ export class Box {
 
   static toString() {
     return Box.box;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -203,6 +211,10 @@ export class Button {
   static toString() {
     return Button.button;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 /**
@@ -228,6 +240,10 @@ export class Card {
 
   static toString() {
     return Card.card;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -255,6 +271,10 @@ export class Checkbox {
   static toString() {
     return Checkbox.checkbox;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 export class Dialog {
@@ -269,6 +289,10 @@ export class Dialog {
 
   static toString() {
     return Dialog.dialog;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -287,6 +311,10 @@ export class Frame {
 
   static toString() {
     return Frame.frame;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -340,6 +368,10 @@ export class Input {
   static toString() {
     return Input.input;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 /**
@@ -374,6 +406,10 @@ export class List {
 
   static toString() {
     return List.list;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -428,6 +464,10 @@ export class Message {
   static toString() {
     return Message.message;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 /**
@@ -467,6 +507,10 @@ export class NavSidebar {
   static toString() {
     return NavSidebar.navSidebar;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 export class ScrollView {
@@ -478,6 +522,10 @@ export class ScrollView {
 
   static toString() {
     return ScrollView.scrollView;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -567,6 +615,10 @@ export class Selector {
   static toString() {
     return Selector.selector;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 export class Separator {
@@ -584,6 +636,10 @@ export class Separator {
   static toString() {
     return Separator.separator;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 export class Skeleton {
@@ -596,6 +652,10 @@ export class Skeleton {
   static toString() {
     return Skeleton.skeleton;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 export class Spinner {
@@ -604,6 +664,10 @@ export class Spinner {
 
   static toString() {
     return Spinner.spinner;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -665,6 +729,10 @@ export class Slider {
   static toString() {
     return Slider.slider;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 /**
@@ -699,6 +767,10 @@ export class Suggestions {
 
   static toString() {
     return Suggestions.suggestions;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -737,6 +809,10 @@ export class Switch {
   static toString() {
     return Switch.switch;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 /**
@@ -758,9 +834,30 @@ export class Typography {
   /**
    * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
    */
+  static readonly header_sm = "header-sm";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   */
   static readonly header = "header";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   */
+  static readonly header_xl = "header-xl";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   */
+  static readonly header_xxl = "header-xxl";
 
-  static className(params: { type?: "subtitle" | "label" | "header" }) {
+  static className(params: {
+    type?:
+      | "text"
+      | "subtitle"
+      | "label"
+      | "header"
+      | "header-sm"
+      | "header-xl"
+      | "header-xxl";
+  }) {
     switch (params.type) {
       case "subtitle":
         return Typography.subtitle;
@@ -768,12 +865,22 @@ export class Typography {
         return Typography.label;
       case "header":
         return Typography.header;
+      case "header-sm":
+        return Typography.header_sm;
+      case "header-xl":
+        return Typography.header_xl;
+      case "header-xxl":
+        return Typography.header_xxl;
     }
     return Typography.text;
   }
 
   static toString() {
     return Typography.text;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -803,6 +910,10 @@ export class Alert {
   static toString() {
     return Alert.alert;
   }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
+  }
 }
 
 export class BreadCrumbs {
@@ -829,6 +940,10 @@ export class BreadCrumbs {
 
   static toString() {
     return BreadCrumbs.breadcrumbs;
+  }
+
+  static [Symbol.toPrimitive]() {
+    return this.toString();
   }
 }
 
@@ -923,7 +1038,7 @@ Object.freeze(Alert);
 Object.freeze(Colors);
 Object.freeze(BreadCrumbs);
 
-export default {
+export const ADWave = Object.freeze({
   Box,
   Button,
   Card,
@@ -947,4 +1062,6 @@ export default {
   Alert,
   BreadCrumbs,
   Colors,
-} as const;
+});
+
+export default ADWave;
