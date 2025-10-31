@@ -1,7 +1,7 @@
 {
   "name": "adwavecss",
   "displayName": "ADWave CSS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Adwaita/GTK inspired CSS for the web.",
   "files": [
     "dist/index.js",
