@@ -1,0 +1,9 @@
+._wc_toolkit_custom_element > :not(._wc_toolkit_content_container) {
+  display: none !important;
+}
+._adw_hidden {
+  display: none;
+}
+._adw_col {
+  flex-direction: column;
+}
