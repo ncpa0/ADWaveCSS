@@ -1,0 +1,102 @@
+adw-calendar .adw-calendar {
+  background-color: var(--clr-bg-5);
+  padding: 0.5em;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  min-width: 19em;
+  min-height: 20em;
+
+  &,
+  & * {
+    user-select: none;
+    font-size: inherit;
+  }
+
+  & .hidden.hidden.hidden.hidden.hidden {
+    display: none;
+  }
+
+  & .year-selector {
+    margin-bottom: 0.25em;
+  }
+
+  & .month-selector {
+    margin-bottom: 0.25em;
+  }
+
+  & .month-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .month-btn {
+      flex: 1;
+      margin-inline: 1em;
+    }
+  }
+
+  & .days-grid {
+    display: none;
+    flex: 1;
+
+    &.visible {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 0.1em;
+    }
+
+    & .header-day {
+      text-align: center;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+
+    & .prev-month-day,
+    & .next-month-day {
+      opacity: 0.5;
+    }
+  }
+
+  & .months-grid {
+    display: none;
+    flex: 1;
+    font-size: 0.8em;
+
+    &.visible {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.3em;
+    }
+  }
+
+  & .years-controls {
+    display: none;
+    margin-bottom: 0.25em;
+
+    &.visible {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.3em;
+    }
+  }
+
+  & .years-grid {
+    display: none;
+    flex: 1;
+
+    &.visible {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0.3em;
+    }
+  }
+
+  & .selected.selected {
+    background-color: var(--clr-primary-300);
+
+    &:hover:not(.disabled) {
+      background-color: var(--clr-primary-500);
+    }
+  }
+}

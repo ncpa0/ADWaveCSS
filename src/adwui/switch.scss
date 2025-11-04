@@ -1,0 +1,9 @@
+adw-switch {
+  display: flex;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .switch .switch-knob {
+    transition: none;
+  }
+}

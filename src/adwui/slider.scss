@@ -1,0 +1,13 @@
+adw-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  touch-action: none;
+}
+
+.skeleton adw-slider {
+  padding-left: 0px;
+  padding-right: 0px;
+}
