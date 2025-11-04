@@ -6,8 +6,8 @@
   border: unset;
   outline: unset;
   outline-offset: -4px;
-  padding: 0.4em 1em;
-  min-height: 2em;
+  padding: 0px 1em;
+  min-height: 2.6em;
   @include bg-transition();
 
   &.adaptive {
