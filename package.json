@@ -56,7 +56,8 @@
     "postbuild": "node ./scripts/post-build.cjs",
     "watch": "yarn watch:js & yarn watch:css",
     "format": "prettier --write ./src/**/*.{scss, ts}",
-    "release": "gio trash ./dist/* && yarn build && npm publish --access public"
+    "release": "gio trash ./dist/* && yarn build && npm publish --access public",
+    "prepack": "yarn build"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
