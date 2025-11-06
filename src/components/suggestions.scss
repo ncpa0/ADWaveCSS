@@ -9,6 +9,10 @@
     padding: 0.5em;
     @include bg-transition(0.1s);
 
+    &:not(.active):hover {
+      background-color: nativeOpacity(color("btn-hover"), 50%);
+    }
+
     &.active {
       background-color: color("btn-hover");
     }
