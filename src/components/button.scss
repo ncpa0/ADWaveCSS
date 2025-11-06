@@ -14,84 +14,107 @@
 
   &.adaptive {
     background-color: color("btn-adaptive");
+    border-color: color("btn-adaptive");
 
     &.toggled {
       background-color: color("btn-adaptive-toggled");
+      border-color: color("btn-adaptive-toggled");
     }
 
     // double the active selector to increase specificity
     &:not(.toggled, .disabled):active:active {
       background-color: color("btn-adaptive-pressed");
+      border-color: color("btn-adaptive-pressed");
     }
 
     &:hover:not(.toggled, .disabled) {
       background-color: color("btn-adaptive-hover");
+      border-color: color("btn-adaptive-hover");
     }
   }
 
   &.primary {
     background-color: color("primary-300");
+    border-color: color("primary-300");
     color: color("primary-text");
 
     &:hover:not(.toggled, .disabled) {
       background-color: color("primary-500");
+      border-color: color("primary-500");
     }
 
     // double the active selector to increase specificity
     &:active:active:not(.disabled) {
       background-color: color("primary-200");
+      border-color: color("primary-200");
     }
 
     &.toggled {
       background-color: color("primary-100");
+      border-color: color("primary-100");
     }
 
     &.disabled {
       background-color: nativeDarken(color("primary-300"), 25%);
+      border-color: nativeDarken(color("primary-300"), 25%);
       color: nativeOpacity(color("primary-text"), 60%);
+    }
+
+    &:focus-visible {
+      border-color: color("focus-accent");
     }
   }
 
   &.danger {
     background-color: color("danger-400");
+    border-color: color("danger-400");
     color: color("danger-text");
 
     &:hover:not(.toggled, .disabled) {
       background-color: color("danger-600");
+      border-color: color("danger-600");
     }
 
     // double the active selector to increase specificity
     &:active:active:not(.disabled) {
       background-color: color("danger-300");
+      border-color: color("danger-300");
     }
 
     &.toggled {
       background-color: color("danger-500");
+      border-color: color("danger-500");
     }
 
     &.disabled {
       background-color: nativeDarken(color("danger-300"), 15%);
+      border-color: nativeDarken(color("danger-300"), 15%);
       color: nativeOpacity(color("danger-text"), 60%);
     }
   }
 
   &.flat {
     background-color: transparent;
+    border-color: color("btn-adaptive-toggled");
 
     &:hover:not(.disabled) {
       background-color: color("btn");
+      border-color: color("btn");
     }
 
     &.adaptive:hover:not(.disabled) {
       background-color: color("btn-adaptive");
+      border-color: color("btn-adaptive");
     }
 
     // double the active selector to increase specificity
     &:active:active:not(.disabled) {
       background-color: color("btn-pressed");
+      border-color: color("btn-pressed");
 
       &.adaptive {
         background-color: color("btn-adaptive-pressed");
+        border-color: color("btn-adaptive-pressed");
       }
     }
   }
@@ -115,6 +138,7 @@
 
   &.toggled {
     background-color: color("btn-toggled");
+    border-color: color("btn-toggled");
   }
 
   &.disabled {
@@ -124,11 +148,13 @@
 
   &:hover:not(.toggled, .disabled) {
     background-color: color("btn-hover");
+    border-color: color("btn-hover");
   }
 
   // double the active selector to increase specificity
   &:not(.toggled, .disabled):active:active {
     background-color: color("btn-pressed");
+    border-color: color("btn-pressed");
   }
 
   &.input.input:focus-visible,
