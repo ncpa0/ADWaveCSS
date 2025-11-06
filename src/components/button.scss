@@ -6,9 +6,8 @@
   background-color: color("btn");
   border-radius: size("bradius");
   font-family: "Ubuntu", sans-serif;
-  border: unset;
+  border: 1px solid color("btn");
   outline: unset;
-  outline-offset: -4px;
   padding: 0px 1em;
   min-height: 2.4em;
   @include bg-transition();
@@ -132,8 +131,12 @@
     background-color: color("btn-pressed");
   }
 
+  &.input.input:focus-visible,
+  &.input.input:focus {
+    outline: none;
+  }
+
   &:focus-visible {
-    outline: solid 2px color("focus");
-    outline-offset: -2px;
+    border: 1px solid color("focus");
   }
 }

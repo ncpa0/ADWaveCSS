@@ -13,6 +13,7 @@ $elementHeight: 2.4em;
   flex-direction: row;
   cursor: pointer;
   align-items: center;
+  border: 1px solid color("btn");
   @include bg-transition();
 
   &:not(#{$noPositionClassName}) {
@@ -21,7 +22,7 @@ $elementHeight: 2.4em;
 
   &:focus-visible {
     outline: none;
-    border: 1px solid color("primary-300");
+    border: 1px solid color("focus");
   }
 
   &.disabled {

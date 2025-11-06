@@ -11,6 +11,10 @@
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         border-left: 0.5px solid color("dimmed");
+
+        &:focus-visible {
+          border-left: 0.5px solid color("focus");
+        }
       }
     }
 
@@ -20,6 +24,10 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         border-right: 0.5px solid color("dimmed");
+
+        &:focus-visible {
+          border-right: 0.5px solid color("focus");
+        }
       }
     }
   }
@@ -33,6 +41,10 @@
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-top: 0.5px solid color("dimmed");
+
+        &:focus-visible {
+          border-top: 0.5px solid color("focus");
+        }
       }
     }
 
@@ -42,6 +54,10 @@
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         border-bottom: 0.5px solid color("dimmed");
+
+        &:focus-visible {
+          border-bottom: 0.5px solid color("focus");
+        }
       }
     }
   }

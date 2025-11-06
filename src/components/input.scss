@@ -2,11 +2,10 @@
   color: color("text");
   background-color: color("btn");
   border-radius: size("bradius");
-  outline: 1px solid color("btn");
-  outline-offset: -1px;
+  outline: none;
   padding: 0px 0.5em;
   font-family: "Ubuntu", sans-serif;
-  border: none;
+  border: 1px solid color("btn");
   min-height: 2.4em;
 
   $placeholderColor: color-mix(in srgb, color("text") 40%, rgb(128, 128, 128));
@@ -15,8 +14,13 @@
     color: $placeholderColor;
   }
 
+  &.input.input:focus-visible,
+  &.input.input:focus {
+    outline: none;
+  }
+
   &.input.input:focus-visible:not(.disabled) {
-    outline: 1px solid color("primary-300");
+    border: 1px solid color("focus");
   }
 
   &.disabled {
