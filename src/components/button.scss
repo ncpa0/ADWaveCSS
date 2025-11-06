@@ -95,7 +95,7 @@
 
   &.flat {
     background-color: transparent;
-    border-color: color("btn-adaptive-toggled");
+    border-color: transparent;
 
     &:hover:not(.disabled) {
       background-color: color("btn");
