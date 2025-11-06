@@ -4,6 +4,8 @@ Adwaita/GTK inspired CSS for the web.
 
 See [examples here](https://adwave.qzz.io/).
 
+Web components can be found in a separate package: https://github.com/ncpa0/ADWaveUI
+
 ## Usage
 
 CSS styles are located in the `dist/styles.css` file. If used with esbuild or webpack and css loader or something similar it can be imported like this from a JavaScript file:
