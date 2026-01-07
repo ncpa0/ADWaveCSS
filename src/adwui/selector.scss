@@ -18,6 +18,10 @@ adw-selector .selected-option {
   text-wrap: nowrap;
 }
 
+adw-selector .options-list .option.unselect {
+  color: color("text-secondary");
+}
+
 adw-selector .selected-option.with-placeholder {
   opacity: 0.4;
 }
