@@ -38,4 +38,4 @@ jobs:
       - name: Building
         run: .yarn/releases/yarn-1.22.19.cjs build
       - name: Publish
-        run: npm publish --access public
+        run: npm publish --access public --tag latest
