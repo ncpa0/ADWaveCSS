@@ -1,0 +1,41 @@
+name: Release Package
+
+permissions:
+  id-token: write # Required for OIDC
+  contents: read
+  repository-projects: write
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  build-and-publish:
+    permissions:
+      id-token: write # Required for OIDC
+      packages: write
+      contents: write
+      pull-requests: write
+      issues: write
+      repository-projects: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: release
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          registry-url: "https://registry.npmjs.org"
+      - name: Update npm
+        run: npm install -g npm@latest
+      - name: Install dependencies
+        run: .yarn/releases/yarn-1.22.19.cjs install --frozen-lockfile
+      - name: Validating syntax
+        run: .yarn/releases/yarn-1.22.19.cjs tsc --noEmit
+      - name: Building
+        run: .yarn/releases/yarn-1.22.19.cjs build
+      - name: Publish
+        run: npm publish --access public
