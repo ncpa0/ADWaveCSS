@@ -6,7 +6,7 @@ adw-selector .selector {
   flex: 1;
 }
 
-adw-selector .selector .option:not(.header):focus {
+adw-selector .selector .option:not(.opt-header):focus {
   background-color: rgb(255 255 255 / 15%) !important;
 }
 
@@ -48,31 +48,31 @@ adw-selector .selector .options-list {
   }
 }
 
-adw-selector .selector .options-list .option.header {
+adw-selector .selector .options-list .option.opt-header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-adw-selector .selector .options-list .option.header span {
+adw-selector .selector .options-list .option.opt-header span {
   color: var(--clr-text-secondary);
 }
 
-adw-selector .selector .options-list .option.header span.opt-label {
+adw-selector .selector .options-list .option.opt-header span.opt-label {
   margin-inline: 0.5em;
 }
 
 adw-selector
   .selector
   .options-list
-  .option.header
+  .option.opt-header
   span:is(:first-child, :last-child) {
   flex: 1;
   height: 1px;
   background-color: var(--clr-text-secondary);
 }
 
-adw-selector .selector .options-list .option.header:hover {
+adw-selector .selector .options-list .option.opt-header:hover {
   background-color: initial;
 }
 
