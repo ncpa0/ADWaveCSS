@@ -31,6 +31,7 @@
     "type": "git",
     "url": "https://github.com/ncpa0/ADWaveCSS.git"
   },
+  "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "types": "./dist/index.d.ts",
   "exports": {
