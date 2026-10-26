@@ -22,9 +22,8 @@
     background-color: color("bg2");
     border-top-left-radius: size("bradius");
     border-top-right-radius: size("bradius");
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     min-height: 2.4em;
     padding: 0.1em;
@@ -32,9 +31,20 @@
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
 
+    & > :first-child {
+      grid-column: 1;
+      justify-self: start;
+    }
+
+    & > :last-child {
+      grid-column: 3;
+      justify-self: end;
+    }
+
+    // Equal specificity with the rules above: this must stay last to win.
     & .dialog-title {
-      flex: 1;
-      margin-inline: 0.5em;
+      grid-column: 2;
+      margin-inline: 1.5em;
       text-align: center;
     }
   }
