@@ -42,6 +42,16 @@ Header is much bigger than regular text and is bolder.
 
 Headers can have four different sizes, `header-sm` is slighty lower font size than the default and the `header-xl` and `header-xxl` are higher font size.
 
+## Font variations
+
+Every type of text (header, subtitle, label, text) can have a modifier class that changes the font family: `mono`, `sans` or `condensed`.
+
+```html
+<p class="text mono">
+  <!-- text -->
+</p>
+```
+
 # Class Names
 
 - `header` - header text
@@ -51,3 +61,6 @@ Headers can have four different sizes, `header-sm` is slighty lower font size th
 - `label` - label text
 - `subtitle` - subtitle text
 - `text` - regular text
+- `mono` - changes font family to Ubuntu Mono
+- `sans` - changes font family to Ubuntu Sans
+- `condensed` - changes font family to Ubuntu Condensed

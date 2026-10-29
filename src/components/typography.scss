@@ -7,6 +7,18 @@
 .header-xxl {
   line-height: 1.5em;
   font-family: "Ubuntu", sans-serif;
+
+  &.mono {
+    font-family: "Ubuntu Mono", monospace;
+  }
+
+  &.sans {
+    font-family: "Ubuntu Sans", sans-serif;
+  }
+
+  &.condensed {
+    font-family: "Ubuntu Condensed", sans-serif;
+  }
 }
 
 .text {
