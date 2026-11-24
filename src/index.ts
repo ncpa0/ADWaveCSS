@@ -820,33 +820,45 @@ export class Switch {
  */
 export class Typography {
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#class-names
    */
   static readonly text = "text";
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#class-names
    */
   static readonly subtitle = "subtitle";
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#class-names
    */
   static readonly label = "label";
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#class-names
    */
   static readonly header_sm = "header-sm";
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#class-names
    */
   static readonly header = "header";
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#class-names
    */
   static readonly header_xl = "header-xl";
   /**
-   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#ClassNames
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#class-names
    */
   static readonly header_xxl = "header-xxl";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#font-variations
+   */
+  static readonly mono = "mono";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#font-variations
+   */
+  static readonly sans = "sans";
+  /**
+   * Read more at @link https://github.com/ncpa0/ADWaveCSS/blob/master/docs/components/typography.md#font-variations
+   */
+  static readonly condensed = "condensed";
 
   static className(params: {
     type?:
@@ -857,22 +869,44 @@ export class Typography {
       | "header-sm"
       | "header-xl"
       | "header-xxl";
+    variation?: "mono" | "sans" | "condensed";
   }) {
+    let cls = "";
     switch (params.type) {
       case "subtitle":
-        return Typography.subtitle;
+        cls = Typography.subtitle;
+        break;
       case "label":
-        return Typography.label;
+        cls = Typography.label;
+        break;
       case "header":
-        return Typography.header;
+        cls = Typography.header;
+        break;
       case "header-sm":
-        return Typography.header_sm;
+        cls = Typography.header_sm;
+        break;
       case "header-xl":
-        return Typography.header_xl;
+        cls = Typography.header_xl;
+        break;
       case "header-xxl":
-        return Typography.header_xxl;
+        cls = Typography.header_xxl;
+        break;
+      default:
+        cls = Typography.text;
+        break;
     }
-    return Typography.text;
+    switch (params.variation) {
+      case "condensed":
+        cls += " " + Typography.condensed;
+        break;
+      case "mono":
+        cls += " " + Typography.mono;
+        break;
+      case "sans":
+        cls += " " + Typography.sans;
+        break;
+    }
+    return cls;
   }
 
   static toString() {
