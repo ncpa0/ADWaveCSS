@@ -2,7 +2,7 @@
 
 Adwaita/GTK inspired CSS for the web.
 
-See [examples here](https://adwave.qzz.io/).
+See [examples here](http://ncpa0.github.io/adwave-docs/).
 
 Web components can be found in a separate package: https://github.com/ncpa0/ADWaveUI
 
