@@ -125,3 +125,34 @@ adw-selector .selector dialog .options-list {
 adw-selector .selector dialog .options-list .option {
   padding: 0.5em;
 }
+
+/**
+ * Overrides the popover UA defaults and the absolutely positioned
+ * fallback styles: a top-layer list is placed entirely by anchor
+ * positioning.
+ */
+adw-selector .selector:not(.no-position) .options-list[popover]:not(:popover-open) {
+  // the UA hides closed popovers with a non-important display: none,
+  // which our own display: flex on the list overrides
+  display: none;
+}
+
+adw-selector .selector:not(.no-position) .options-list:popover-open {
+  position: fixed;
+  inset: auto;
+  width: auto;
+  height: auto;
+  border: unset;
+  color: inherit;
+  justify-self: stretch;
+  align-self: start;
+}
+
+adw-selector .selector:not(.no-position) .options-list:popover-open:not(.top) {
+  position-area: bottom center;
+}
+
+adw-selector .selector:not(.no-position) .options-list:popover-open.top {
+  position-area: top center;
+  align-self: end;
+}

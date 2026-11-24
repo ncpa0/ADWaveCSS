@@ -116,6 +116,7 @@ $elementHeight: 2.4em;
       justify-content: flex-start;
       user-select: none;
       text-align: left;
+      text-wrap: nowrap;
       @include bg-transition(0.1s);
 
       &:hover {
@@ -128,6 +129,11 @@ $elementHeight: 2.4em;
 
       &:focus-visible {
         background-color: color("bg6");
+      }
+
+      & span {
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
